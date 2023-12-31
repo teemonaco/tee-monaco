@@ -1,0 +1,44 @@
+/*
+Custom Css
+*/
+
+/*------------------------ 
+header items 
+-------------------------*/
+#templatemo_nav_top * {
+    font-size: .875rem!important;
+    letter-spacing: 1px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tm-badge-sm {
+    padding: .25em .25em;
+    font-size: .75rem!important;
+    top: 80%!important;
+}
+
+.tm-text-sm {
+    font-size: 1.5rem;
+}
+
+.tm-font-500 {
+    font-weight: 500!important;
+}
+
+.tm-bg-black {
+    background-color: #000 !important;
+}
+
+/*
+Utility Classes 
+------------------------------*/
+.tm-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}

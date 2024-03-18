@@ -49,11 +49,15 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work, #about, #portfolio, #contact
+#work, #about, #portfolio,  #contact 
     {
         padding-top: 100px;
         padding-bottom: 120px;
     }
+    #contact   {    
+    padding-bottom: 30px;
+    }
+
 /* end all section */
 
 /* start simpletextrotator */
@@ -167,7 +171,7 @@ h1,h2,h3,h4,h5
 #home
 	{
         background: url('../images/tm-hero-circle.png');
-        background-size: 240px;
+        background-size: 300px;
         background-repeat: no-repeat;
         padding-top: 100px;
         padding-bottom:100px;
@@ -208,28 +212,23 @@ h1,h2,h3,h4,h5
 #work
     {
         background: #1a1a1a;
+        padding: 80px 0px !important;
     }
-#work h2
+#work h2, #portfolio h2
     {
         text-align: center;
-        color: #fff!important;
-        letter-spacing: 3px; 
-        font-size: 28px;
-        font-family: "Inter", sans-serif;
-        font-weight: 600 !important;
-        line-height: 100%;
-        margin-bottom: 60px !important;
-    }
+        
+    } 
 
     .tm-sub-heading
     {
         text-align: left;
         color: #fff!important;
         letter-spacing: 3px; 
-        font-size: 28px;
         font-family: "Inter", sans-serif;
         font-weight: 600 !important;
         line-height: 100%;
+        margin-bottom: 60px;;
     }
 
 
@@ -259,13 +258,17 @@ h1,h2,h3,h4,h5
     }
 .media-heading
     {
-        font-weight: 300;
         font-size: 22px;
         color: #fff!important;
         font-family: "Lato", sans-serif;
-        font-weight: 300;     
+        font-weight: 400;     
         line-height: 100%;  
         margin-bottom: 0px!important;
+    }
+
+    .image-contain {
+        display: flex;
+        width: 44px;
     }
     
 /* end work */
@@ -306,10 +309,7 @@ h1,h2,h3,h4,h5
         background: #1a1a1a;
         text-align: center;
     }
-#portfolio h2
-    {
-        padding-bottom: 30px;
-    }
+
 #portfolio .portfolio-thumb
     {
         overflow: hidden;
@@ -452,9 +452,10 @@ h1.t-name.myName {
 h2.rotate  {
     color: #f0ff46!important;
     font-family: "Inter", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 3px; 
-    font-size: 30px;
+    font-size: 28px;
+    text-align: left;
 }
 
 .tm-title{
@@ -541,7 +542,6 @@ p.tm-p-s-w {
     justify-content: flex-start;
     text-align: left;
     gap: 20px;
-    margin-top: 50px;
   }
 
   .my-work-col {
@@ -566,13 +566,20 @@ p.tm-p-s-w {
     gap: 30px;
   }
 
-  .about-me {
+  /* .page-col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     text-align: left;
     gap: 30px;
+  } */
+
+  .about-me.col-xs-11 {
+    padding-bottom: 60px!important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   #about span {
@@ -598,17 +605,11 @@ p.tm-p-s-w {
 
 }
 
-
   @media only screen and (max-width: 999px) {
     
-    .work-col {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        text-align: left;
-        gap: 40px;
-      }
+    .tm-grid {
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
 
       .col-md-4 {
         width: 100%;

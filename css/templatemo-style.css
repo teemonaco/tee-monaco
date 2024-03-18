@@ -1,16 +1,9 @@
-/*
-
-Lavish HTML CSS Template
-
-https://templatemo.com/tm-458-lavish
-		
-*/
 
 body
 {
 	background: #000000;
 	color: #999;
-	font-family: 'Raleway', sans-serif;
+    font-family: "Inter", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -49,7 +42,9 @@ footer .fp-tableCell
 h1,h2,h3,h4,h5
     {
         color: #ffffff;
-        font-weight: bold;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 /* end all heading */
 
@@ -171,25 +166,19 @@ h1,h2,h3,h4,h5
 /* start home */       
 #home
 	{
-        background: url('../images/home-bg.jpg');
-        background-size: cover;
+        background: url('../images/tm-hero-circle.png');
+        background-size: 240px;
         background-repeat: no-repeat;
-        padding-top: 120px;
-        padding-bottom: 140px;
+        padding-top: 100px;
+        padding-bottom:100px;
         text-align: center;
+        background-position: right bottom;
 	}
 #home h1
     {
-        border: 2px solid #D43F52;
-        color: #D43F52;
         display: inline-block;
-        letter-spacing: 6px;
-        padding: 25px 35px;
-        margin: 30px 0;
-    }
-#home h2
-    {
-        padding-bottom: 10px;
+        padding: 0px;
+        margin: 0px;
     }
 #home .btn
     {
@@ -197,16 +186,20 @@ h1,h2,h3,h4,h5
         border: 2px solid #ffffff;
         color: #ffffff;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 300;
         width: 180px;
         height: 60px;
-        margin-top: 40px;
-        padding-top: 18px;
+        margin-top: 0px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 1px;
         transition: all 0.4s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 #home .btn:hover
     {
-        background: #D43F52;
+        background: #1a1a1a;
         border-color: transparent;
     }
 /* end home */
@@ -219,7 +212,26 @@ h1,h2,h3,h4,h5
 #work h2
     {
         text-align: center;
+        color: #fff!important;
+        letter-spacing: 3px; 
+        font-size: 28px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600 !important;
+        line-height: 100%;
+        margin-bottom: 60px !important;
     }
+
+    .tm-sub-heading
+    {
+        text-align: left;
+        color: #fff!important;
+        letter-spacing: 3px; 
+        font-size: 28px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600 !important;
+        line-height: 100%;
+    }
+
 
 #work .media
     {
@@ -230,7 +242,7 @@ h1,h2,h3,h4,h5
     {
         border: 2px solid #ffffff;
         border-radius: 50%;
-        color: #D43F52;
+        color: #f0ff46;
         font-size: 24px;
         margin-right: 24px;
         width: 60px;
@@ -245,29 +257,30 @@ h1,h2,h3,h4,h5
         background: #ffffff;
         cursor: pointer;
     }
-#work .media .media-heading
+.media-heading
     {
-        font-weight: 600;
-        font-size: 20px;
-        padding-bottom: 10px;
+        font-weight: 300;
+        font-size: 22px;
+        color: #fff!important;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;     
+        line-height: 100%;  
+        margin-bottom: 0px!important;
     }
+    
 /* end work */
 
-/* start about */
-#about h4
-    {
-        padding: 15px 0;
-		color: #D43F52;
-    }
+
 #about .progress
     {
         border-radius: 4px;
-        background: #ffffff;
+        background: #a7a7a7;
         height: 4px;
+        margin-bottom: 40px;
     }
 #about .progress .progress-bar-danger
     {
-        background: #D43F52;
+        background: #f0ff46;
     }
 #about .text-top
     {
@@ -305,7 +318,7 @@ h1,h2,h3,h4,h5
     }
 #portfolio .portfolio-thumb .portfolio-overlay
     {
-        background: #D43F52;
+        background: #f0ff46;
         top: 0;
         left: 0;
         right: 0;
@@ -343,7 +356,7 @@ h1,h2,h3,h4,h5
     {
         border: 2px solid #ffffff;
         border-radius: 50%;
-        color: #D43F52;
+        color: #f0ff46;
         width: 50px;
         height: 50px;
         line-height: 45px;
@@ -365,7 +378,7 @@ h1,h2,h3,h4,h5
     }
 #contact input[type="submit"]
     {
-        background: #D43F52;
+        background: #f0ff46;
         border: 2px solid transparent;
         color: #ffffff;
         font-weight: bold;
@@ -374,7 +387,7 @@ h1,h2,h3,h4,h5
 #contact input[type="submit"]:hover
     {
         background: #ffffff;
-        color: #D43F52;
+        color: #f0ff46;
     }
 /* end contact */
 
@@ -415,6 +428,189 @@ footer hr
     }
 .social-icon li a:hover
     {
-        color: #D43F52;
+        color: #f0ff46;
     }
 /* end social icon */
+
+.tm-hero-col {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 30px;
+    box-sizing:border-box
+}
+
+h1.t-name.myName {
+    color: #fff!important;
+    letter-spacing: 3px; 
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+
+h2.rotate  {
+    color: #f0ff46!important;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px; 
+    font-size: 30px;
+}
+
+.tm-title{
+    color: #f0ff46!important;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px; 
+    font-size: 22px;
+}
+
+p.tm-p {
+    color: #a7a7a7!important;
+    font-size: 20px!important;
+    letter-spacing: 1px; 
+    text-align: left;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+}
+
+p.tm-p-s {
+    font-size: 17px!important; letter-spacing: 1px; 
+    text-align: left;
+    line-height: 160%;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+    color: #a7a7a7!important;
+}
+
+p.tm-p-s-w {
+    font-size: 17px!important; letter-spacing: 1px; 
+    text-align: left;
+    line-height: 160%;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+    color: #fff!important;
+    margin-bottom: 0px!important;
+}
+
+
+.tm-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    gap: 10px; 
+    width: 100%;
+}
+
+.tm-grid-item {
+    background-color: #f0f0f0; /* Example background color */
+    text-align: center; /* Example text alignment */
+
+  }
+
+  .tm-grid-item img {
+    width: 100%!important;
+  }
+
+  .tm-outter-grid {
+    width: 100%;
+  }
+
+  .modal-dialog {
+    height: auto!important;
+  }
+
+  .modal-dialog {
+   height: 60vw!important;
+   height: auto!important;
+  }
+
+
+  .my-work-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .about-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .my-work-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .highlight {
+    color: #ffffff;
+  }
+
+  .section-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 30px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 30px;
+  }
+
+  #about span {
+    font-size: 17px!important; letter-spacing: 1px; 
+    text-align: left;
+    line-height: 160%;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+    color: #fff!important;
+    margin-bottom: 0px!important;
+}
+
+@media (min-width: 768px) {
+.modal-dialog {
+    height: 70vw;
+    width: auto!important;
+    margin: 30px auto;
+}
+.modal-content {
+    width: 100%;
+    height: auto!important;
+}
+
+}
+
+
+  @media only screen and (max-width: 999px) {
+    
+    .work-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        gap: 40px;
+      }
+
+      .col-md-4 {
+        width: 100%;
+      }
+  }

@@ -9,13 +9,13 @@ body
 }
 
 /* start all section */
-#home,
+
 #home .fp-slide,
 #home .fp-tableCell,
 
-#work,
+/* #work,
 #work .fp-slide,
-#work .fp-tableCell,
+#work .fp-tableCell, */
 
 #about,
 #about .fp-slide,
@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work, #about, #portfolio,  #contact 
+ #about, #portfolio,  #contact 
     {
         padding-top: 100px;
         padding-bottom: 120px;
@@ -166,18 +166,32 @@ h1,h2,h3,h4,h5
   transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
 }
 /* end simpletextrotator */
-
+#home {
+  height: 500px!important;
+  overflow: hidden;
+}
 /* start home */       
-#home
+/* #home
 	{
         background: url('../images/tm-hero-circle.png');
-        background-size: 300px;
+        background-size: 400px;
         background-repeat: no-repeat;
-        padding-top: 100px;
-        padding-bottom:100px;
+        padding-top: 50px;
+        padding-bottom:50px;
         text-align: center;
+        opacity: 0.6;
         background-position: right bottom;
-	}
+	} */
+
+ .tee-bg {
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 550px;
+ }
+
+
 #home h1
     {
         display: inline-block;
@@ -192,7 +206,7 @@ h1,h2,h3,h4,h5
         font-size: 16px;
         font-weight: 300;
         width: 180px;
-        height: 60px;
+        height: 50px;
         margin-top: 0px;
         font-family: "Lato", sans-serif;
         letter-spacing: 1px;
@@ -201,19 +215,32 @@ h1,h2,h3,h4,h5
         align-items: center;
         justify-content: center;
     }
+
+a.btn {
+    text-decoration: none!important;
+}
+
 #home .btn:hover
     {
         background: #1a1a1a;
         border-color: transparent;
     }
+
+    #work {
+      background: #1a1a1a;
+      height: auto!important;
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+    }
 /* end home */
 
 /* start work */
-#work
+/* #work
     {
-        background: #1a1a1a;
-        padding: 80px 0px !important;
-    }
+        padding: 80px 0px 80px 0px!important;
+        box-sizing: border-box;
+    } */
 #work h2, #portfolio h2
     {
         text-align: center;
@@ -228,7 +255,7 @@ h1,h2,h3,h4,h5
         font-family: "Inter", sans-serif;
         font-weight: 600 !important;
         line-height: 100%;
-        margin-bottom: 60px;;
+        margin-bottom: 20px;
     }
 
 
@@ -258,37 +285,65 @@ h1,h2,h3,h4,h5
     }
 .media-heading
     {
-        font-size: 22px;
+        font-size: 20px;
         color: #fff!important;
-        font-family: "Lato", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 400;     
         line-height: 100%;  
         margin-bottom: 0px!important;
     }
 
-    .image-contain {
+    .image-contain img {
         display: flex;
-        width: 44px;
+        width: 50px;
     }
     
 /* end work */
-
+#about {
+    background-color: #1a1a1a;
+}
 
 #about .progress
     {
         border-radius: 4px;
         background: #a7a7a7;
         height: 4px;
-        margin-bottom: 40px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+
+        
     }
-#about .progress .progress-bar-danger
+
+
+/* #about .progress .progress-bar-danger
     {
         background: #f0ff46;
-    }
-#about .text-top
+    } */
+
+.user
     {
-        padding-top: 50px;
+        background: #3DD5F3!important;
+        color: #1a1a1a!important;
     }
+
+    .proto
+    {
+        background: #4DD4AC!important;
+        color: #1a1a1a!important;
+    }
+
+    .design
+    {
+        background: #3D8BFD!important;
+        color: #1a1a1a!important;
+    }
+
+    .code
+    {
+        background: #A370F7!important;
+        color: #1a1a1a!important;
+    }
+
 #about span
     {
         color: #ffffff;
@@ -300,6 +355,11 @@ h1,h2,h3,h4,h5
     {
         font-weight: bold;
         float: right;
+    }
+
+    .about-row  {
+        margin-bottom: 30px;
+        font-weight: 400;
     }
 /* end about */
 
@@ -435,11 +495,18 @@ footer hr
 .tm-hero-col {
     display: flex;
     flex-direction: column;
-    gap: 22px;
     align-items: flex-start;
-    justify-content: center;
-    padding: 0px 30px;
-    box-sizing:border-box
+    justify-content: space-between;
+    box-sizing:border-box;
+    gap: 24px;
+    opacity: 100%!important;
+    position: relative;
+}
+
+.grid-wrap {
+  height: auto!important;
+  align-items: flex-start!important;
+  justify-content: flex-start!important;
 }
 
 h1.t-name.myName {
@@ -450,7 +517,7 @@ h1.t-name.myName {
 }
 
 h2.rotate  {
-    color: #f0ff46!important;
+    color:#A370F7!important;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     letter-spacing: 3px; 
@@ -473,6 +540,7 @@ p.tm-p {
     text-align: left;
     font-weight: 300;
     font-family: "Lato", sans-serif;
+    margin-bottom: 0px!important;
 }
 
 p.tm-p-s {
@@ -481,11 +549,15 @@ p.tm-p-s {
     line-height: 160%;
     font-weight: 300;
     font-family: "Lato", sans-serif;
-    color: #a7a7a7!important;
+    color: #bbbbbb!important;
+}
+
+.differences {
+    margin-bottom: 30px;
 }
 
 p.tm-p-s-w {
-    font-size: 17px!important; letter-spacing: 1px; 
+    font-size: 16px!important; letter-spacing: 1px; 
     text-align: left;
     line-height: 160%;
     font-weight: 300;
@@ -494,7 +566,9 @@ p.tm-p-s-w {
     margin-bottom: 0px!important;
 }
 
-
+.tm-yellow {
+   color: #f0ff46!important;
+}
 .tm-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
@@ -502,10 +576,31 @@ p.tm-p-s-w {
     width: 100%;
 }
 
+.tm-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.tm-row-s {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
 .tm-grid-item {
-    background-color: #f0f0f0; /* Example background color */
     text-align: center; /* Example text alignment */
 
+  }
+
+  .tm-grid-item-dark {
+    background-color:transparent!important;
   }
 
   .tm-grid-item img {
@@ -532,7 +627,17 @@ p.tm-p-s-w {
     align-items: center;
     justify-content: center;
     text-align: left;
-    gap: 20px;
+    gap: 16px;
+  }
+
+  .my-skills-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 10px;
+    width: 100%!important;
   }
 
   .about-row {
@@ -550,7 +655,8 @@ p.tm-p-s-w {
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    gap: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
   }
 
   .highlight {
@@ -566,14 +672,35 @@ p.tm-p-s-w {
     gap: 30px;
   }
 
-  /* .page-col {
+  .tm-header {
+    background: #1a1a1a!important;
+    padding: 10px 36px;
+  }
+
+  .nav-link:hover {
+    color:#f0ff46!important;
+  }
+
+  .navbar-nav {
+gap: 20px;
+  }
+
+  .tm-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .tm-col-sm {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-    gap: 30px;
-  } */
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%!important;
+  }
 
   .about-me.col-xs-11 {
     padding-bottom: 60px!important;
@@ -591,6 +718,12 @@ p.tm-p-s-w {
     color: #fff!important;
     margin-bottom: 0px!important;
 }
+
+.media-heading.tm-yellow {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
 
 @media (min-width: 768px) {
 .modal-dialog {
@@ -610,8 +743,222 @@ p.tm-p-s-w {
     .tm-grid {
         grid-template-columns: repeat(1, 1fr)!important;
     }
-
-      .col-md-4 {
-        width: 100%;
-      }
   }
+
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+  .tm-w-100 {
+    width: 100%!important;
+  }
+
+  div.card {
+    width: 100%!important;
+}
+
+.tm-card {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    padding: 1.4em;
+    border-radius: 6px;
+    align-items: flex-start;
+  }
+  
+  .tm-card-image {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .tmcard-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .tm-category {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    color: #f0ff46!important;
+    padding: 10px 7px 0;
+    text-decoration:none!important;
+  }
+  
+  .tm-category:hover {
+    cursor: pointer;
+  }
+  
+  .tm-heading {
+    font-weight: 600;
+    color: #ffffff;
+    padding: 7px;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: 300!important;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+  }
+  
+  .tm-heading:hover {
+    cursor: pointer;
+  }
+  
+  .tm-author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .tm-name {
+    font-weight: 600;
+  }
+  
+  .tm-name:hover {
+    cursor: pointer;
+  }
+/* General styling for the grid container */
+.tm-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns in larger screens */
+  gap: 20px;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 1024px) {
+  .tm-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns in medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .tm-grid {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+}
+
+/* Card styling with conditional shadow */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e; /* Slightly lighter dark background for cards */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%; /* Ensures all cards stretch to the same height */
+}
+
+
+/* Content styling within cards */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Makes the content fill the space */
+  padding: 20px;
+}
+
+.my-skills-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.my-skills-row img {
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.hover_content p {
+  color: #bbb; /* Light gray text for readability */
+  font-size: 14px;
+  line-height: 1.6;
+  flex-grow: 1; /* Allows paragraph to expand */
+}
+
+
+.card {
+  background: #1a1a1a;
+  border: 2px solid rgba(143, 143, 143, 0.322);
+}
+
+.card-body {
+  gap: 10px!important;
+}
+
+.card .content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.card .logo {
+  margin: 0 0 1em;
+  width: 10.625em;
+  transition: all 0.35s ease;
+}
+
+.card .h6 {
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Base setup */
+.card {
+  perspective: 1000px; /* Needed for the 3D flip effect */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%; /* full width of the parent container */
+  min-height: 300px; /* Minimum height to maintain the square look */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Ensures that the flipped side is not visible when rotated */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 20px; /* Padding for internal content */
+}
+
+.card-front {
+  background: #1e1e1e; /* Light background for the front card */
+}
+
+.card-back {
+  background: #222222; /* Light grey background for the back card */
+  transform: rotateY(180deg); /* Initial position for back card */
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg); /* Flip effect on hover */
+}
+
+/* Content styling */
+.media-heading {
+  font-size: 20px; /* Larger font size for headings */
+  font-weight: 400;
+  text-align: center;
+  line-height: 160%;
+}
+
+.card-text {
+  font-size: 16px; 
+  font-weight: 400;
+  color: #fff;/* Adequate font size for readability */
+}

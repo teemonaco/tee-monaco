@@ -1,20 +1,21 @@
 
-//
 $(document).ready(function() {
-			$('#fullpage').fullpage({
-				'verticalCentered': false,
-				'scrollingSpeed': 600,
-				'autoScrolling': false,
-				'css3': true,
-				'navigation': true,
-				'navigationPosition': 'right',
-			});
-		});
+    $('#fullPage').fullpage({
+        verticalCentered: false,
+        scrollingSpeed: 600,
+        autoScrolling: true,
+        css3: true,
+        navigation: true,
+        navigationPosition: 'right',
+        paddingTop: '50px' // Adjust based on the actual height of your header
+    });
+});
 
-// wow
-$(function()
-{
-    new WOW().init();
-    $(".rotate").textrotator();
-})
+$(document).ready(function() {
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+});
+
 

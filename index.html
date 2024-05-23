@@ -12,11 +12,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
 
 	<!--light-box-->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
@@ -27,12 +28,8 @@
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
 		rel="stylesheet">
 	<!-- animate -->
-	<link rel="stylesheet" href="css/animate.min.css">
-	<!-- bootstrap -->
-	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-
-	<!-- font-awesome -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet" />
+	<link href="assets/font-awesome/css/solid.css" rel="stylesheet" />
 	<!-- fullpage -->
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<!-- custom -->
@@ -41,11 +38,10 @@
 </head>
 
 <body>
-
-	<div id="fullpage">
+	<div id="fullPage" class="fullpage-wrapper">
 		<!-- Sticky Header -->
-		<header class="tm-header navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<div class="container-fluid">
+		<header class="tm-header navbar navbar-expand-lg navbar-dark sticky-top">
+			<div class="container">
 				<a class="navbar-brand" href="#">
 					
 						 <img src="images/tee-logo.svg" /> 
@@ -67,304 +63,222 @@
 			</div>
 		</header>
 		<!-- start home -->
-		<div id="home" class="section">
+		<div id="home" class="section fp-section active" style="height: auto; padding-top: 50px;">
 			<div class="container">
-				<div class="tm-hero-col">
-					<h1>Teena Monaco</h1>
-					<div class="tm-inner-col">
-						<!-- <p class="hero-text">UX is the heartbeat</p> -->
-						<div class="tm-hero-quote">
-							<div class="tm-row">
-								<div class="hero-text">UX is the heartbeat</div>
-								<!-- <div class="hero-text">heartbeat</div>  -->
-								<div class="loading tm-heart-rate">
-									<svg version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="50px" viewBox="0 0 140 60" fill="#ff8de3">
-										<polyline fill="none" stroke="#ff8de3" stroke-width="4" stroke-miterlimit="10" points="0,35 38.514,35 44.595,25 50.676,35 57.771,35 62.838,45 71.959,5 80.067,50 84.122,35 97.297,35 103.379,30 110.473,35 140,35"></polyline>
-									</svg>					
-									<div class="tm-fade-in"></div>
-									<div class="tm-fade-out"></div>
-								</div>
-								<div class="hero-text">				
-									<span class="light-pink">tech</span>
-								</div>
-							</div>
-							<div class="hero-text">				
-								& <span class="light-pink">tech</span> is our future.
-							</div>
-						</div>
-						<div class="tm-row quote-text-2">
-							I am dedicated to enrich user connections in our tech-driven world.
+				<div class="row justify-content-between align-items-center">
+					<div class="col-12 col-md-6 order-2 order-md-1">
+						<h1>Teena Monaco</h1>
+						<div class="tm-hero-text">
+							Welcome to my portfolio! Every aspect of this site was meticulously crafted by me, leveraging the robust capabilities of HTML, Bootstrap, and jQuery.
+							<br><br>
+							As you navigate through my work, you'll uncover the reasons why you've arrived at just the right place. Enjoy exploring my projects and discover the unique blend of creativity and technical expertise that defines my approach.
 						</div>
 					</div>
-				</div>
-				<div class="tm-col">
-					<!-- <img class="tee-bg" src="images/tm-hero-circle.png" alt=""> -->
-					<div class="tm-row">
-						<img src="images/tm-hero-circle.png" width="330" alt="">
+					<div class="col-12 col-md-6 justify-content-md-end d-flex order-1 order-md-2">
+						<img class="img-fluid tee-bg" src="assets/images/tm-hero-circle.png" alt="">
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
-		<!-- end home -->		
 		
-
-
-		<!-- start about -->
-		<div id="work" class="section">
-			<div class="container tm-col">
-				<div class="container tm-col">
-					<div class="heading">
-						<h2>What Sets Me Apart:</h2>
-						<div class="white">Distinctive Design and Development:</div> 
-						<p>Fusing User-Centered Solutions, Systematic Innovation, Behavioral Insights, and Front-End Expertise to Shape Exceptional Digital Experiences</p>
-					</div>
-					<div class="container grid-wrap">
-						<div class="tm-grid">
-							<div class="card">
-								<div class="card-inner">
-									
-									<div class="card-front tm-col my-skills-row">
-										<svg xmlns="http://www.w3.org/2000/svg" height="90" width="102" viewBox="0 0 640 512"><path fill="#B197FC" d="M208 80A64 64 0 1 0 80 80a64 64 0 1 0 128 0zM64 80a80 80 0 1 1 160 0A80 80 0 1 1 64 80zM320 304a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-176a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM187.9 368L149.5 496H448v16H144.7 128l4.8-16L176 352H384v16H187.9zM196 192c-1.3 5.2-2.4 10.6-3 16H59.1l-36 96H6L48 192H196zM444 192H592l42 112H616.9l-36-96H447c-.7-5.4-1.7-10.8-3-16zM576 80A64 64 0 1 0 448 80a64 64 0 1 0 128 0zM432 80a80 80 0 1 1 160 0A80 80 0 1 1 432 80zm64 208h64 8v8 64h64 8v8 64 8h-8H568v64 8h-8H496h-8v-8V440H424h-8v-8V368v-8h8 64V296v-8h8zm8 80v8h-8H432v48h64 8v8 64h48V432v-8h8 64V376H560h-8v-8V304H504v64z"/></svg>
-										<div class="item-title">User-Centered Inclusion</div>
-
-									</div>
-									<div class="card-back">
-										<p class="card-text">From aspiring nurse to tech visionary, my early experiences with empathy
-											and care now shape innovative, inclusive designs, highlighting my
-											deep-rooted commitment to accessibility in technology.</p>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-inner">
-									
-									<div class="card-front tm-col my-skills-row">
-										<svg xmlns="http://www.w3.org/2000/svg" height="90" width="102" viewBox="0 0 640 512"><path fill="#B197FC" d="M208 80A64 64 0 1 0 80 80a64 64 0 1 0 128 0zM64 80a80 80 0 1 1 160 0A80 80 0 1 1 64 80zM320 304a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-176a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM187.9 368L149.5 496H448v16H144.7 128l4.8-16L176 352H384v16H187.9zM196 192c-1.3 5.2-2.4 10.6-3 16H59.1l-36 96H6L48 192H196zM444 192H592l42 112H616.9l-36-96H447c-.7-5.4-1.7-10.8-3-16zM576 80A64 64 0 1 0 448 80a64 64 0 1 0 128 0zM432 80a80 80 0 1 1 160 0A80 80 0 1 1 432 80zm64 208h64 8v8 64h64 8v8 64 8h-8H568v64 8h-8H496h-8v-8V440H424h-8v-8V368v-8h8 64V296v-8h8zm8 80v8h-8H432v48h64 8v8 64h48V432v-8h8 64V376H560h-8v-8V304H504v64z"/></svg>
-										<div class="item-title">Front End Dev</div>
-
-									</div>
-									<div class="card-back">
-										<p class="card-text">Bridging the gap between visual creativity and functional expertise, I bring my designs to life through meticulous front-end development. My proficiency in HTML, CSS, and JavaScript empowers me to construct intuitive and dynamic user interfaces that enhance user engagement and accessibility.</p>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-inner">
-									<div class="card-front tm-col my-skills-row">
-										<svg xmlns="http://www.w3.org/2000/svg" height="90" width="102" viewBox="0 0 640 512"><path fill="#B197FC" d="M368 80v41.4 16.1V176H272V137.5 121.4 80h96zm56.1 56H528c.2 0 .4 0 .6 0c3.9 27.1 27.2 48 55.4 48c30.9 0 56-25.1 56-56s-25.1-56-56-56c-28.2 0-51.6 20.9-55.4 48c-.2 0-.4 0-.6 0H384V80 64H368 272 256V80v40H112c-.2 0-.4 0-.6 0C107.6 92.9 84.2 72 56 72C25.1 72 0 97.1 0 128s25.1 56 56 56c28.2 0 51.6-20.9 55.4-48c.2 0 .4 0 .6 0H215.9C143.1 166.4 91.3 237 88.2 320H48 32v16 96 16H48h96 16V432 336 320H144 104.2c3.6-88.7 67.5-162 151.8-179.8V176v16h16 96 16V176 140.2C468.3 158 532.2 231.3 535.8 320H496 480v16 96 16h16 96 16V432 336 320H592 551.8c-3.1-83-54.9-153.6-127.7-184zM16 128a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zm528 0a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM48 336h96v96H48V336zm448 96V336h96v96H496z"/></svg>
-										<div class="item-title">Technical Design and Development</div>
-									</div>
-									<div class="card-back">
-										<p class="card-text">Bridging the gap between visual creativity and functional expertise, I bring my designs to life through meticulous front-end development. My proficiency in HTML, CSS, and JavaScript empowers me to construct intuitive and dynamic user interfaces that enhance user engagement and accessibility.</p>
-									</div> 
-								</div>
-							</div>
-						
-							<!-- <div class="card">
-								<div class="card-inner">
-									<div class="card-front tm-col my-skills-row">
-										<svg xmlns="http://www.w3.org/2000/svg" height="90" width="102" viewBox="0 0 640 512"><path fill="#B197FC" d="M112 0h8H272h4.2l2.4 3.5 104 152 1.4 2V160v16 24V304v16H368 16 0V304 176 160H16h96V8 0zM267.8 16H128V160H366.3L267.8 16zM16 176V304H368V200 176H120 16zM80 368c-35.3 0-64 28.7-64 64s28.7 64 64 64H336c35.3 0 64-28.7 64-64s-28.7-64-64-64H80zM0 432c0-44.2 35.8-80 80-80H336c44.2 0 80 35.8 80 80s-35.8 80-80 80H80c-44.2 0-80-35.8-80-80zm96 0a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zm112-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32zm80 16a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM576 161.5L416 300.2V279L578.8 138 592 126.5V144 322.1v3.2l-2.2 2.3L456 467.2V496h96c39.8 0 72-32.2 72-72V384 320 272 16H586.9L416 158.4V137.6L578.9 1.9 581.1 0H584h48 8V8 272v48 64 40c0 48.6-39.4 88-88 88H448h-8v-8V464v-3.2l2.2-2.3L576 318.9V161.5z"/></svg>
-										<div class="item-title">Design System Architect</div>
-
-									</div>
-									<div class="card-back">
-										<p class="card-text">I've engineered a comprehensive design system from scratch, along with
-											custom frameworks that streamline and unify the design process across
-											projects. This foundational work facilitates consistency, efficiency,
-											and scalability in design, reinforcing my role as a visionary in the
-											field.</p>
-									</div>
-								</div>
-							</div> -->
-							<div class="card">
-								<div class="card-inner">
-									<div class="card-front tm-col my-skills-row">
-										<svg xmlns="http://www.w3.org/2000/svg" height="90" width="102" viewBox="0 0 512 512"><path fill="#B197FC" d="M491.2 65.2l-6.2 5-160 128-5.4 4.3-5.1-4.7L191.6 82.6 21.1 222.2l-6.2 5.1L4.7 214.9l6.2-5.1 176-144 5.4-4.4 5.1 4.8L320.4 181.4 475 57.8l6.2-5 10 12.5zM80 336H48V464H80V336zM48 320H80 96v16V464v16H80 48 32V464 336 320H48zm128-80V464h32V240H176zm-16-16h16 32 16v16V464v16H208 176 160V464 240 224zm176 80H304V464h32V304zm-32-16h32 16v16V464v16H336 304 288V464 304 288h16zm128-48V464h32V240H432zm-16-16h16 32 16v16V464v16H464 432 416V464 240 224z"/></svg>
-										<div class="item-title">Behavior Analytics Enthusiast</div>
-									</div>
-									<div  class="card-back">
-										<p class="card-text">With an extreme interest in studying behavior analytics, I've designed
-											custom dashboards to analyze user interactions and gain deep insights
-											into their preferences and needs. I've also personally attended events
-											and met with users to understand them better, ensuring my designs are
-											truly user-centric.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end about -->
-<!-- start about -->
-<div id="stats" class="section">
-	<div class="container tm-col">
-				<div class="tm-row">
-					<div class="quote-container">	
-							<div class="tm-row">	
-								About <span class="highlight">75%</span> of Americans 
-							</div>
-							<div class="tm-row">
-							with disabilities use the internet daily.
-							</div>
-					</div>
-					<div class="quote-container">	
-							<div class="tm-row">	
-								Over <span class="highlight">96%</span> of the top one million
-							</div>
-							<div class="tm-row">
-								web pages had accessibility issues in 2023.							
-							</div>
-					</div>
-				</div>				
-		</div>
-	</div>
-	<!-- end about -->
-			<!-- start portfolio -->
-			<div id="portfolio" class="section">
-				<div class="row">
-					<div class="col-md-12 wow bounce">
-						<h2 class="tm-sub-heading">Gallery</h2>
-					</div>
-				</div>
-				<div class="container tm-grid">
-					<div class="tm-grid">
-						<div class="tm-grid-item tm-card">
-							<div class="tm-card-image">
-								<img src="images/analytics.png">
-							</div>
-							<div class="tm-category">Research</div>
-							<div class="tm-heading">Visualization of error patterns and device preferences, laying
-								the groundwork for targeted improvements.
-							</div>
-						</div>
-						<div class="tm-grid-item tm-card">
-							<div class="tm-card-image">
-								<img src="images/user-flow.png">
-							</div>
-							<div class="tm-category">User Flow Analysis</div>
-							<div class="tm-heading">A breakdown of the existing cart page flow, identifying
-								opportunities for a more streamlined checkout experience.
-							</div>
-						</div>
-						<div class="tm-grid-item tm-card">
-							<div class="tm-card-image">
-								<img src="images/analytics.jpg">
-							</div>
-							<div class="tm-category">Wireframing & Design</div>
-							<div class="tm-heading">Preliminary designs that showcase the strategic overhaul of the
-								cart page layout and functionality.
-							</div>
-						</div>
-						<div class="tm-grid-item tm-card">
-							<div class="tm-card-image">
-								<img src="images/approved-design.png">
-							</div>
-							<div class="tm-category">Final Design</div>
-							<div class="tm-heading">The approved design, encapsulating all the enhancements aimed at
-								improving user satisfaction and conversion rates.
-							</div>
-						</div>
-
-						<div class="tm-grid-item tm-card">
-							<div class="tm-card-image">
-								<img src="images/analytics.jpg">
-							</div>
-							<div class="tm-category">Code Implementation</div>
-							<div class="tm-heading">A glimpse into the coding process, highlighting the practical
-								application of the design.
-							</div>
-						</div>
-
-						<div class="tm-grid-item tm-card">
-							<div class="tm-card-image">
-								<img src="images/analytics.jpg">
-							</div>
-							<div class="tm-category">Continuous Testing</div>
-							<div class="tm-heading">The ongoing commitment to refining the user experience based on
-								real-world usage and feedback.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end portfolio -->
-
-
-			<!-- start contact -->
-			<div id="contact" class="section">
-				<div class="container">
-					<div class="tm-grid">
-						<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-							<address>
-								<p class="contact-title">CONTACT ME</p>
-								<!-- <p><i class="fa fa-phone"></i> 914-527-3509</p> -->
-								<p><i class="fa fa-envelope-o"></i> teemonaco@gmail.com</p>
-
-							</address>
-						</div>
-						<!-- <div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
-						<form role="form" method="post" action="#">
-							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-							<textarea name="message" rows="5" class="form-control" id="message"
-								placeholder="Your Message"></textarea>
-							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
-						</form>
-					</div> -->
-						<!-- <div class="col-md-1 col-sm-1"></div> -->
-					</div>
-				</div>
-			</div>
-			<!-- end contact -->
-
-			<!-- start footer -->
-			<!-- <footer>
+		<!-- end home -->		
+		<!--what-->
+		<div id="what" class="section">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
-						<ul class="social-icon">
-							<li><a href="#" class="fa fa-facebook"></a></li>
-							<li><a href="#" class="fa fa-twitter"></a></li>
-							<li><a href="#" class="fa fa-instagram"></a></li>
-						</ul>
+				<div class="d-flex flex-column gap-5 col-md-12">
+					<h1 class="text-center">What Sets Me Apart</h1>
+					<!--stats-->
+					<div class="row g-3">
+							<div class="col-md-6">
+								<div class="card impact-card">
+									<div class="card-body   d-flex flex-row align-items-center">
+										<div class="progress" style="width: 100%;">
+											<div class="progress-bar" style="width: 75%;"></div>
+										</div>
+									</div>
+									<div class="d-flex flex-row align-items-center p-2">
+										<div class="impact-statistic">75%</div>
+										<div class="impact-context">
+											of Americans with disabilities use the internet daily.</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card impact-card">
+									<div class="card-body d-flex align-items-center">
+										<div class="progress" style="width: 100%;">
+											<div class="progress-bar" style="width: 96%;"></div>
+										</div>
+									</div>
+									<div class="d-flex flex-row align-items-center p-2">
+										<div class="impact-statistic">96%</div>
+										<div class="impact-context">
+										of the top one million web pages had accessibility issues in 2023.</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!--statement-->
+						<h2>My passion is driven by the need to create inclusive, accessible digital experiences for everyone.</h2>
+					<!--details-->
+					<div class="container-fluid">
+						<div class="row g-3 justify-content-center">
+							<!-- Each card column class adjusted for specific breakpoints -->
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card">
+									<div class="d-flex flex-column align-items-center gap-3 card-body">
+										<img class="what-icon" width="60px"src="assets/images/heart.svg"/>										<h4>Empathetic Designer</h4>
+										<p class="card-text">Transitioning from nursing to technology, my background in healthcare deeply informs my approach to UX design, emphasizing empathy and accessibility. I am committed to creating inclusive and intuitive technologies that cater to diverse user needs, ensuring technology serves everyone equally.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card">
+									<div class="d-flex flex-column align-items-center gap-3 card-body">
+										<img class="what-icon" width="60px"src="assets/images/code.svg"/>										<h4>Front End Developer</h4>
+										<p class="card-text">Bridging the gap between visual creativity and functional expertise, I bring my designs to life through meticulous front-end development. My proficiency in HTML, CSS, and JavaScript empowers me to construct intuitive and dynamic user interfaces that enhance user engagement and accessibility.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card">
+									<div class="d-flex flex-column align-items-center gap-3 card-body">
+										<img class="what-icon" width="60px"src="assets/images/chart.svg"/>
+										<h4>Analytical Thinker</h4>
+										<p class="card-text">With an extreme interest in studying behavior analytics, I've designed custom dashboards to analyze user interactions and gain deep insights into their preferences and needs. I've also personally attended events and met with users to understand them better, ensuring my designs are truly user-centric.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card">
+									<div class="d-flex flex-column align-items-center gap-3 card-body">
+										<img class="what-icon" width="60px"src="assets/images/stars.svg"/>
+										<h4>Driven for Success</h4>
+										<p class="card-text">Fueled by a relentless pursuit of excellence and tangible outcomes, my approach is rooted in a passion for results. I am deeply committed to driving transformative changes and fostering business growth. I thrive on challenging the status quo and leveraging my analytical skills to optimize processes and enhance overall performance.</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</footer> -->
-			<!-- end footer -->
-
 		</div>
+		<!-- start portfolio -->
+		<div id="work" class="section">
+			<div class="container">
+				<div class="d-flex flex-column gap-5 col-md-12">
+					<h1 class="text-center">My Work</h1>
+					<ul class="nav nav-tabs" id="galleryTabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="tab-1-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">New Designs</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab-2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">ReDesigns</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab-3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">Data Visualization</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="galleryTabsContent">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+							<!-- Trigger modal -->
+							<img src="assets/images/tm-hero-circle.png" alt="Image 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal1">
+						</div>
+						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+							<!-- Trigger modal -->
+							<img src="assets/images/tm-hero-circle.png" alt="Image 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal2">
+						</div>
+						<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+							<!-- Trigger modal -->
+							<img src="assets/images/tm-hero-circle.png" alt="Image 3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal3">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div id="contact" class="section">
+			<div class="container">
+				<div class="tm-grid">
+					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+						<address>
+							<p class="contact-title">CONTACT ME</p>
+							<!-- <p><i class="fa fa-phone"></i> 914-527-3509</p> -->
+							<p><i class="fa fa-envelope-o"></i> teemonaco@gmail.com</p>
+
+						</address>
+					</div>
+					<!-- <div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+					<form role="form" method="post" action="#">
+						<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+						<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+						<textarea name="message" rows="5" class="form-control" id="message"
+							placeholder="Your Message"></textarea>
+						<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+					</form>
+				</div> -->
+					<!-- <div class="col-md-1 col-sm-1"></div> -->
+				</div>
+			</div>
+		</div>
+		<!-- end contact -->
+		<!-- start footer -->
+		<!-- <footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+					<ul class="social-icon">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-instagram"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer> -->
+		<!-- end footer -->
+	</div>
+
+	<!-- Modals -->
+<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content" style="background-color: transparent; border: none;">
+            <div class="modal-header" style="border: none;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/tm-hero-circle.png" alt="Image 1" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content" style="background-color: transparent; border: none;">
+            <div class="modal-header" style="border: none;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/tm-hero-circle.png" alt="Image 2" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
 
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- bootstrap -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"></script>
-		<!-- <script src="js/bootstrap.min.js"></script> -->
-		<!-- fullpage -->
-		<script src="js/jquery.fullPage.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+		
+
+		 <script src="js/jquery.fullPage.js"></script> 
 		<!-- smoothScroll -->
 		<script src="js/smoothscroll.js"></script>
-		<!-- wow -->
-		<script src="js/wow.min.js"></script>
-		<!-- text rotater -->
-		<script src="js/jquery.simple-text-rotator.js"></script>
 		<!-- custom -->
 		<script src="js/custom.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-
-		<script>
-			$(document).ready(function () {
-				$(document).on("click", '[data-toggle="lightbox"]', function (event) {
-					event.preventDefault();
-					$(this).ekkoLightbox();
-				});
-			});
-		</script>
-
+		
 
 
 </body>

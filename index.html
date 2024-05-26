@@ -6,17 +6,20 @@
 
 	<title>Teena Monaco</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="description" content="UX Portfolio">
 	<meta name="author" content="teemonaco">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous">
 
 
 	<!--light-box-->
@@ -27,61 +30,99 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
 		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
 	<!-- animate -->
 	<link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet" />
 	<link href="assets/font-awesome/css/solid.css" rel="stylesheet" />
 	<!-- fullpage -->
-	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<!-- custom -->
 	<link rel="stylesheet" href="css/templatemo-style.css">
 
 </head>
 
 <body>
-	<div id="fullPage" class="fullpage-wrapper">
-		<!-- Sticky Header -->
-		<header class="tm-header navbar navbar-expand-lg navbar-dark sticky-top">
-			<div class="container">
-				<a class="navbar-brand" href="#">
-					
-						 <img src="images/tee-logo.svg" /> 
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#about">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#portfolio">Portfolio</a>
-						</li>
-					</ul>
+			<!-- Sticky Header -->
+			<header class="tm-header navbar navbar-expand-lg navbar-dark sticky-top">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+	
+						<img src="assets/images/tee-logo.svg" height="20px" width="160px"/>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#portfolio">Portfolio</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+	<div id="fullPage" class="fullpage-wrapper">
+
+		<!-- <div class="nav-dots">
+			<a href="#home" class="dot" data-section="1">1</a>
+			<a href="#what" class="dot" data-section="2">2</a>
+			<a href="#work" class="dot" data-section="3">3</a>
+			<a href="#contact" class="dot" data-section="4">4</a>
+		  </div> -->
 		<!-- start home -->
 		<div id="home" class="section fp-section active" style="height: auto; padding-top: 50px;">
 			<div class="container">
 				<div class="row justify-content-between align-items-center">
-					<div class="col-12 col-md-6 order-2 order-md-1">
-						<h1>Teena Monaco</h1>
-						<div class="tm-hero-text">
-							Welcome to my portfolio! Every aspect of this site was meticulously crafted by me, leveraging the robust capabilities of HTML, Bootstrap, and jQuery.
-							<br><br>
-							As you navigate through my work, you'll uncover the reasons why you've arrived at just the right place. Enjoy exploring my projects and discover the unique blend of creativity and technical expertise that defines my approach.
+					<div
+						class="col-12 col-md-6 order-md-1 d-flex flex-column justify-content-center gap-3 align-items-center">
+						<img class="img-fluid tee-bg" src="assets/images/tm-hero-circle.png" width="380px" style="padding: 20px;" alt="">
+						<div class="d-flex flex-column justify-content-center gap-3 align-items-start">
+							<h1>Welcome to My Portfolio</h1>
+							<div class="light-small">With over 10 years of user-focused experience across e-commerce and B2B tech, combined with a
+								background in nursing, I bring a unique blend of empathy and technical expertise to the
+								tech-driven world.
+							</div>
+							<div class="light-small">
+								This portfolio is a testament to my expertise, being entirely custom-coded by me using HTML, CSS, JavaScript, and Bootstrap.
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-6 justify-content-md-end d-flex order-1 order-md-2">
-						<img class="img-fluid tee-bg" src="assets/images/tm-hero-circle.png" alt="">
+					<div class="col-12 col-md-6 d-flex flex-column gap-3 justify-content-center order-md-2">
+						<h3>My Journey into Tech</h3>
+						<ul class="timeline">
+							<li style="margin-top: 0px" class="pink-100">
+								<div class="year">2023-Present</div>UX/UI Designer & Front End Developer at the world's
+								most visited papercrafting website and store.
+							</li>
+							<li class="pink-200">
+								<div class="year">2015-2023</div>
+								Senior Product Designer at a leading enterprise intelligence solution, serving Global 2000 companies across life sciences, government, professional services, and investment industries.
+							</li>
+							<li class="pink-300">
+								<div class="year">2013-2015</div>Web Designer for America's leading awards manufacturer
+								and supplier
+							</li>
+							<li class="pink-400">
+								<div class="year">2010-2022</div>
+								Started in a family screen printing business, honing
+								vector art skills from age 11 and creating my first website in Dreamweaver at 17.
+							</li>
+							<li class="pink-500">
+								<div class="year">2006</div>
+								Began as a CNA at 16, with a nursing background that fuels my passion for user-centered
+								designs.
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<!-- end home -->		
+		<!-- end home -->
 		<!--what-->
 		<div id="what" class="section">
 			<div class="container">
@@ -89,72 +130,75 @@
 					<h1 class="text-center">What Sets Me Apart</h1>
 					<!--stats-->
 					<div class="row g-3">
-							<div class="col-md-6">
-								<div class="card impact-card">
-									<div class="card-body   d-flex flex-row align-items-center">
-										<div class="progress" style="width: 100%;">
-											<div class="progress-bar" style="width: 75%;"></div>
-										</div>
-									</div>
-									<div class="d-flex flex-row align-items-center p-2">
-										<div class="impact-statistic">75%</div>
-										<div class="impact-context">
-											of Americans with disabilities use the internet daily.</div>
+						<div class="col-md-6">
+							<div class="card impact-card">
+								<div class="card-body   d-flex flex-row align-items-center">
+									<div class="progress" style="width: 100%;">
+										<div class="progress-bar" style="width: 75%;"></div>
 									</div>
 								</div>
+								<div class="d-flex flex-row align-items-center p-2">
+									<div class="impact-statistic">75%</div>
+									<div class="impact-context">
+										of Americans with disabilities use the internet daily.</div>
+								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="card impact-card">
-									<div class="card-body d-flex align-items-center">
-										<div class="progress" style="width: 100%;">
-											<div class="progress-bar" style="width: 96%;"></div>
-										</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card impact-card">
+								<div class="card-body d-flex align-items-center">
+									<div class="progress" style="width: 100%;">
+										<div class="progress-bar" style="width: 96%;"></div>
 									</div>
-									<div class="d-flex flex-row align-items-center p-2">
-										<div class="impact-statistic">96%</div>
-										<div class="impact-context">
+								</div>
+								<div class="d-flex flex-row align-items-center p-2">
+									<div class="impact-statistic">96%</div>
+									<div class="impact-context">
 										of the top one million web pages had accessibility issues in 2023.</div>
-									</div>
 								</div>
 							</div>
+						</div>
 					</div>
 					<!--statement-->
-						<h2>My passion is driven by the need to create inclusive, accessible digital experiences for everyone.</h2>
+					<h2>My passion is driven by the need to create inclusive, accessible digital experiences for
+						everyone.</h2>
 					<!--details-->
 					<div class="container-fluid">
 						<div class="row g-3 justify-content-center">
 							<!-- Each card column class adjusted for specific breakpoints -->
-							<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="col-md-6">
 								<div class="card">
 									<div class="d-flex flex-column align-items-center gap-3 card-body">
-										<img class="what-icon" width="60px"src="assets/images/heart.svg"/>										<h4>Empathetic Designer</h4>
-										<p class="card-text">Transitioning from nursing to technology, my background in healthcare deeply informs my approach to UX design, emphasizing empathy and accessibility. I am committed to creating inclusive and intuitive technologies that cater to diverse user needs, ensuring technology serves everyone equally.</p>
+										<img class="what-icon" width="60px" src="assets/images/heart.svg" />
+										<h4>Empathetic Designer</h4>
+										<p class="card-text">My transition from nursing to technology infuses my UX design approach with deep empathy and a commitment to accessibility. With a healthcare background, I focus on creating inclusive, user-centered technologies that cater to diverse needs, ensuring everyone can benefit from digital experiences.</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="col-md-6">
 								<div class="card">
 									<div class="d-flex flex-column align-items-center gap-3 card-body">
-										<img class="what-icon" width="60px"src="assets/images/code.svg"/>										<h4>Front End Developer</h4>
-										<p class="card-text">Bridging the gap between visual creativity and functional expertise, I bring my designs to life through meticulous front-end development. My proficiency in HTML, CSS, and JavaScript empowers me to construct intuitive and dynamic user interfaces that enhance user engagement and accessibility.</p>
+										<img class="what-icon" width="60px" src="assets/images/code.svg" />
+										<h4>Front End Developer</h4>
+										<p class="card-text">I bridge the gap between visual creativity and functional expertise. My proficiency in HTML, CSS, and JavaScript allows me to bring designs to life, crafting intuitive and dynamic user interfaces that enhance engagement and accessibility.</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="col-md-6">
 								<div class="card">
 									<div class="d-flex flex-column align-items-center gap-3 card-body">
-										<img class="what-icon" width="60px"src="assets/images/chart.svg"/>
+										<img class="what-icon" width="60px" src="assets/images/chart.svg" />
 										<h4>Analytical Thinker</h4>
-										<p class="card-text">With an extreme interest in studying behavior analytics, I've designed custom dashboards to analyze user interactions and gain deep insights into their preferences and needs. I've also personally attended events and met with users to understand them better, ensuring my designs are truly user-centric.</p>
+										<p class="card-text">Passionate about behavior analytics, I've designed custom dashboards to analyze user interactions, gaining deep insights into user preferences. My hands-on approach, including attending events and meeting users, ensures my designs are genuinely user-centric.</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="col-md-6">
 								<div class="card">
 									<div class="d-flex flex-column align-items-center gap-3 card-body">
-										<img class="what-icon" width="60px"src="assets/images/stars.svg"/>
+										<img class="what-icon" width="60px" src="assets/images/stars.svg" />
 										<h4>Driven for Success</h4>
-										<p class="card-text">Fueled by a relentless pursuit of excellence and tangible outcomes, my approach is rooted in a passion for results. I am deeply committed to driving transformative changes and fostering business growth. I thrive on challenging the status quo and leveraging my analytical skills to optimize processes and enhance overall performance.</p>
+										<p class="card-text">Relentlessly pursuing excellence and tangible outcomes, I drive transformative changes and foster business growth. My analytical skills and passion for results enable me to challenge the status quo, optimize processes, and enhance overall performance.</p>
 									</div>
 								</div>
 							</div>
@@ -166,36 +210,165 @@
 		<!-- start portfolio -->
 		<div id="work" class="section">
 			<div class="container">
-				<div class="d-flex flex-column gap-5 col-md-12">
-					<h1 class="text-center">My Work</h1>
-					<ul class="nav nav-tabs" id="galleryTabs" role="tablist">
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="tab-1-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">New Designs</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="tab-2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">ReDesigns</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="tab-3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">Data Visualization</button>
-						</li>
-					</ul>
-					<div class="tab-content" id="galleryTabsContent">
-						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
-							<!-- Trigger modal -->
-							<img src="assets/images/tm-hero-circle.png" alt="Image 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal1">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="new-designs-tab" data-toggle="tab" href="#new-designs" role="tab" aria-controls="new-designs" aria-selected="true">New Designs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="redesigns-tab" data-toggle="tab" href="#redesigns" role="tab" aria-controls="redesigns" aria-selected="false">Redesigns</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="new-designs" role="tabpanel" aria-labelledby="new-designs-tab">
+						<div class="pastel-highlight user-story">
+							<h3>Mobile App for Data Sharing and Content Management</h3>
+							<p>As a researcher working for a top pharmaceutical company, I need to stay updated with the latest research and data insights relevant to my field so that I can make informed decisions and stay ahead in my research.</p>
+							<div class="container-gallery">
+									<div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Open the App</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-1.png" alt="App home screen">
+										</div>
+									</div>
+									<div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Discover Real Time Insights</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-3.png" alt="App home screen">
+										</div>
+									</div>
+									<div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Save or Share Articles</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-4.png" alt="App home screen">
+										</div>
+									</div>
+									<div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Sort & Filter Visualization</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-5.png" alt="App home screen">
+										</div>
+									</div>
+									<!-- <div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Tabbed Navigation</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-6.png" alt="App home screen">
+										</div>
+									</div> -->
+									<div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Tabbed Navigation</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-7.png" alt="App home screen">
+										</div>
+									</div>
+									<!-- <div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Customize Settings</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-2.png" alt="App home screen">
+										</div>
+									</div> -->
+									<div class="col-md-4 step">
+										<div class="gallery-step">
+											<i class="fas fa-shoe-prints"></i><span class="gallery-step">Customize Settings</span>
+										</div>
+										<div class="img-wrap">
+											<img width="70%" src="assets/images/infopro/frame-8.png" alt="App home screen">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Lightbox for Project 1 -->
+						<div id="project1-lightbox" class="lightbox">
+							<span class="close" onclick="document.getElementById('project1-lightbox').style.display='none'">&times;</span>
+							<img width="300px" class="lightbox-content" src="assets/images//infopro/frame-1.png" alt="Mobile App for Data Sharing">
+							<div class="pastel-highlight user-story">
+								<h3>Mobile App for Data Sharing and Content Management</h3>
+								<p>As a researcher working for a top pharmaceutical company, I need to stay updated with the latest research and data insights relevant to my field so that I can make informed decisions and stay ahead in my research.</p>
+								<div class="step"><i class="fas fa-arrow-right"></i> Open the App: <img src="assets/images/infopro/frame-1.png" alt="App home screen"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> Navigate to “Latest Insights”: <img src="assets/images/infopro/frame-1.png" alt="Latest Insights section"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> Search for Topics: <img src="assets/images/infopro/frame-1.png" alt="Search functionality"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> Save Articles and Reports: <img src="assets/images/infopro/frame-1.png" alt="Saved items dashboard"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> Receive Notifications: <img src="assets/images/infopro/frame-1.png" alt="Push notification example"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> Share Insights: <img src="assets/images/infopro/frame-1.png" alt="Sharing feature"></div>
+								<p>Outcome: The researcher efficiently stays informed about the latest research, enhancing their productivity and the quality of their work. The app's intuitive design and real-time updates help maintain a seamless flow of information within their organization.</p>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
-							<!-- Trigger modal -->
-							<img src="assets/images/tm-hero-circle.png" alt="Image 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal2">
+					</div>
+					<div class="tab-pane fade" id="redesigns" role="tabpanel" aria-labelledby="redesigns-tab">
+						<!-- Project 2 Thumbnail -->
+						<div class="gallery-thumbnail">
+							<img src="project2-thumbnail.jpg" alt="Video Platform" class="gallery-image" data-toggle="lightbox" data-target="#project2-lightbox">
+							<div class="pastel-highlight">Video Platform</div>
 						</div>
-						<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
-							<!-- Trigger modal -->
-							<img src="assets/images/tm-hero-circle.png" alt="Image 3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal3">
+						<!-- Lightbox for Project 2 -->
+						<div id="project2-lightbox" class="lightbox">
+							<span class="close" onclick="document.getElementById('project2-lightbox').style.display='none'">&times;</span>
+							<img class="lightbox-content" src="project2-homepage.jpg" alt="Video Platform">
+							<div class="pastel-highlight user-story">
+								<h3>New Video Platform</h3>
+								<p>As a user on our e-commerce site, I want to access product-related videos directly on the site so that I don't need to go to YouTube, enhancing my shopping experience.</p>
+								<div class="step"><i class="fas fa-arrow-right"></i> Access the Homepage: <img src="screenshot7.jpg" alt="Homepage"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> Browse Videos: <img src="screenshot8.jpg" alt="Video browsing"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> Watch a Video: <img src="screenshot9.jpg" alt="Video player"></div>
+								<div class="step"><i class="fas fa-arrow-right"></i> See Product Links: <img src="screenshot10.jpg" alt="Product links"></div>
+								<p>Outcome: Users stay on our site longer, engage more with our content, and have a seamless shopping experience without needing to leave for external platforms.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>		
+
+			<!--
+			<div class="container">
+				<div class="d-flex flex-column gap-5 col-md-12">
+					<h1 class="text-center">My Work</h1>
+					<ul class="nav nav-tabs" id="galleryTabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="tab-1-tab" data-bs-toggle="tab" data-bs-target="#tab-1"
+								type="button" role="tab" aria-controls="tab-1" aria-selected="true">New Designs</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab-2-tab" data-bs-toggle="tab" data-bs-target="#tab-2"
+								type="button" role="tab" aria-controls="tab-2" aria-selected="false">ReDesigns</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tab-3-tab" data-bs-toggle="tab" data-bs-target="#tab-3"
+								type="button" role="tab" aria-controls="tab-3" aria-selected="false">Data
+								Visualization</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="galleryTabsContent">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+							<img src="assets/images/tm-hero-circle.png" alt="Image 1" class="img-fluid"
+								data-bs-toggle="modal" data-bs-target="#imageModal1">
+						</div>
+						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+							<img src="assets/images/tm-hero-circle.png" alt="Image 2" class="img-fluid"
+								data-bs-toggle="modal" data-bs-target="#imageModal2">
+						</div>
+						<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+							<img src="assets/images/tm-hero-circle.png" alt="Image 3" class="img-fluid"
+								data-bs-toggle="modal" data-bs-target="#imageModal3">
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
 		<div id="contact" class="section">
 			<div class="container">
 				<div class="tm-grid">
@@ -222,65 +395,85 @@
 		</div>
 		<!-- end contact -->
 		<!-- start footer -->
-		<!-- <footer>
+	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
-					<ul class="social-icon">
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-instagram"></a></li>
-					</ul>
 				</div>
 			</div>
 		</div>
-	</footer> -->
+	</footer> 
 		<!-- end footer -->
 	</div>
 
 	<!-- Modals -->
-<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content" style="background-color: transparent; border: none;">
-            <div class="modal-header" style="border: none;">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/images/tm-hero-circle.png" alt="Image 1" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content" style="background-color: transparent; border: none;">
-            <div class="modal-header" style="border: none;">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/images/tm-hero-circle.png" alt="Image 2" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</div>
+	<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content" style="background-color: transparent; border: none;">
+				<div class="modal-header" style="border: none;">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/images/tm-hero-circle.png" alt="Image 1" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content" style="background-color: transparent; border: none;">
+				<div class="modal-header" style="border: none;">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/images/tm-hero-circle.png" alt="Image 2" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-		<!-- bootstrap -->
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- bootstrap -->
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-		 <script src="js/jquery.fullPage.js"></script> 
-		<!-- smoothScroll -->
-		<script src="js/smoothscroll.js"></script>
-		<!-- custom -->
-		<script src="js/custom.js"></script>
-		
 
+	<!-- smoothScroll -->
+	<!-- <script src="js/smoothscroll.js"></script> -->
+	<!-- custom -->
+	<script src="js/custom.js"></script>
+
+	 <!-- <script>
+		document.addEventListener("DOMContentLoaded", () => {
+		  const sections = document.querySelectorAll("section");
+		  const navDots = document.querySelectorAll(".nav-dots .dot");
+	
+		  const handleScroll = () => {
+			let currentSection = null;
+	
+			sections.forEach((section, index) => {
+			  const sectionTop = section.offsetTop;
+			  const sectionHeight = section.clientHeight;
+	
+			  if (pageYOffset >= sectionTop - sectionHeight / 3) {
+				currentSection = index;
+			  }
+			});
+	
+			navDots.forEach(dot => dot.classList.remove("active"));
+			if (currentSection !== null) {
+			  navDots[currentSection].classList.add("active");
+			}
+		  };
+	
+		  window.addEventListener("scroll", handleScroll);
+	
+		  handleScroll(); // Initialize the active dot on page load
+		});
+	  </script>  -->
 
 </body>
-
 </html>

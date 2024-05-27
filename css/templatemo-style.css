@@ -168,6 +168,7 @@ home section
 #home h3 {
   font-family: "Inter Tight", sans-serif;
     font-weight: 700;
+    margin-top: 20px;
 }
 
 #home p, .light-small {
@@ -176,6 +177,8 @@ home section
   color: #Ffffff;
   /* Bright white for passion text */
   font-family: "Inter", sans-serif;
+  margin-bottom: 8px;
+  font-weight: 400;
 }
 
 ul.timeline {
@@ -217,6 +220,18 @@ ul.timeline>li {
   margin-bottom: 6px;
 }
 
+.project-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.project-row .year {
+  background: #334978;
+  font-size: .9rem;
+}
 
 ul.timeline > li.pink-100 .year {
   background: #EFDDF5;
@@ -293,9 +308,7 @@ what section
 --------------------------------*/
 #what h1 {
   font-family: "Inter Tight", sans-serif;
-  font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 40px;
   color: #c8aeff;
 }
 
@@ -357,10 +370,32 @@ what section
   font-family: "Inter", sans-serif;
 }
 
+.gallery-step .card-text {
+font-size: 1rem;
+  color: #fff;
+  /* Softer white for context */
+  display: inline;
+  /* Inline display to align with statistics */
+  text-align: left;
+  font-family: "Inter", sans-serif;
+}
+.gallery-step .card-text span {
+font-size: 1.5rem;
+font-weight: 600;
+  color: #4a90e2;
+  /* Softer white for context */
+  display: inline;
+  /* Inline display to align with statistics */
+  text-align: left;
+  font-family: "Inter", sans-serif;
+}
 
-
-
-
+#work h1 {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #4a90e2;
+}
 
 p.card-text {
   font-size: 1.125rem !important;
@@ -394,22 +429,44 @@ p.card-text {
   padding-top: 50px;
   /* This should match or exceed the height of your fixed header */
 }
-
+div.tee-logo {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    color: #D6A8E7;
+    margin-bottom: 0px;
+    font-size: 1rem; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+}
 .tm-hero-text {
   margin-top: 20px;
   /* Provides a little space between the text and image on mobile */
 }
 
 a.nav-link  {
-  color: #4a90e2;
+  color: #D6A8E7;
   font-weight: 600;
 }
+
+#redesigns-tab  {
+background-color: #131a29;
+width: 100%;
+text-align: center;
+}
+
+
 .nav-tabs .nav-link.active {
   background-color: #4a90e2;
-  color: #09101b;
+  width: 100%;
+  text-align: center;
 }
-.tab-content {
-  margin-top: 20px;
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-tabs {
+  border-color:  #131a29;
+  border-width: 2px;
+  box-sizing: border-box;
 }
 .gallery-thumbnail {
   border: 1px solid #D6A8E7;
@@ -453,7 +510,12 @@ a.nav-link  {
   cursor: pointer;
 }
 .user-story {
-  margin-top: 20px;
+  background-color:  #040d20;
+  padding: 60px;
+  box-sizing: border-box;
+   border: 2px solid  #131a29;
+   border-top: 0px;
+   box-sizing: border-box;
 }
 .user-story .step {
   margin-bottom: 10px;
@@ -473,7 +535,7 @@ a.nav-link  {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #09101b;
   border: 2px solid #1E2D4C;
   color: #D0E7FB;
@@ -490,7 +552,13 @@ a.nav-link  {
   width: 100%;
   padding-top: 16px;
 }
-
+.user-story {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 12px;
+}
 #work h3 {
   color: #4a90e2;
 }
@@ -500,35 +568,33 @@ div.container-gallery {
 }
 
 .gallery-step {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
-  line-height: 160%;
-  color: #4a90e2;
-  letter-spacing: .25px;
-  font-weight: 400;
-  gap: 8px; 
+display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    line-height: 160%;
+    color: #4a90e2;
+    letter-spacing: .25px;
+    font-weight: 400;
+    gap: 20px;
 }
 .gallery-step i::before {
   color: #334978;
 }
-div.gallery-step {
+div.gallery-step.content {
   padding-bottom: 16px;
   border-bottom: 1px solid #1E2D4C;
 }
 
 
-.tab-pane {
-  margin-top: 30px;
-}
 .container-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  width: 100%;
 }
 
 

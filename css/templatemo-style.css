@@ -155,7 +155,6 @@ home section
 
 #home {
   background-color: #140b17;
-  padding: 100px 0px;
 }
 
 #home h1 {
@@ -434,7 +433,7 @@ div.tee-logo {
     font-weight: 600;
     color: #D6A8E7;
     margin-bottom: 0px;
-    font-size: 1rem; 
+    font-size: 1.25rem; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -453,6 +452,7 @@ a.nav-link  {
 
 #redesigns-tab  {
 background-color: #131a29;
+border-color: #131a29;
 width: 100%;
 text-align: center;
 }
@@ -460,6 +460,7 @@ text-align: center;
 
 .nav-tabs .nav-link.active {
   background-color: #4a90e2;
+  border-color: #4a90e2;
   width: 100%;
   text-align: center;
 }
@@ -563,9 +564,9 @@ gap: 12px;
   color: #4a90e2;
 }
 
-div.container-gallery {
+/* div.container-gallery {
   margin-top: 40px;
-}
+} */
 
 .gallery-step {
 display: flex;

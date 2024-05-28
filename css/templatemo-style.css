@@ -629,13 +629,18 @@ div.gallery-step.content {
 }
 
 
-.container-gallery {
+#new-designs .container-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   width: 100%;
 }
-
+#redesigns .container-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
 
 /* Additional styles for responsiveness */
 @media (max-width: 768px) {

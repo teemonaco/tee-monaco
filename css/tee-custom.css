@@ -419,9 +419,7 @@ p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .tm-section {
-    padding-top: 40px;
-  }
+
 
   .tm-order-1 {
     order: 1;

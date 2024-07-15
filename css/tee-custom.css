@@ -77,6 +77,10 @@ ul, li {
   background-color: #161627;
 }
 
+#journey.tm-section {
+  margin-bottom: 30px!important;
+}
+
 .tm-card-body {
   align-items: center;
 }
@@ -125,6 +129,7 @@ li.nav-item {
   flex: 1;
   align-items: center;
   justify-content: center;
+  display: inline-flex;
 }
 
 a.nav-link:hover {
@@ -143,7 +148,8 @@ a.nav-link:hover {
 
 .nav-tabs a.nav-link {
   color: #c4aef7;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-tabs .nav-link.active {
@@ -154,7 +160,7 @@ a.nav-link:hover {
 
 
 a.nav-link {
-  font-size: .875rem;
+  font-size: .75rem;
   text-align: center;
 }
 
@@ -407,11 +413,14 @@ img.tm-card-img-top {
 .tm-video-gallery img, .tm-cart-gallery img {
   width: 30%;
 }
+p {
+  color: #8d7db1;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .tm-section {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 
   .tm-order-1 {
@@ -431,6 +440,12 @@ img.tm-card-img-top {
   .tm-modal-content {
     width: 100%;
     height: auto !important;
+  }
+
+  .img-fluid {
+    padding: 30px;
+    box-sizing: border-box;
+    padding-top: 0px!important;
   }
 }
 

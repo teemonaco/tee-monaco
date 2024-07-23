@@ -43,7 +43,7 @@ h2 {
   font-weight: 600;
   font-style: normal;
   font-size: 1.75rem;
-  /* margin-bottom: 20px; */
+  margin-bottom: 10px; 
 }
 
 ul, li {
@@ -168,7 +168,7 @@ ul, li {
 }
 
 .tm-timeline li.present {
-  color: #7feaff;
+  color: #c4eed0;
 }
 
 .tm-timeline > li:before {
@@ -186,7 +186,9 @@ ul, li {
   font-family: 'font awesome 6 free';
   font-size: 20px;
 }
-
+.tm-timeline > li {
+  margin-right: 30px;
+}
 .tm-year {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -206,12 +208,14 @@ ul, li {
 }
 
 .tm-timeline li.present:before {
- color: #7feaff;
+ color: #fff;
+}
+.tm-timeline li.present .tm-year  {
+  color: #fff;
 }
 
-
-.tm-timeline li.present .tm-year, .tm-timeline li.present ul li   {
-  color: #7feaff;
+.tm-timeline li.present ul li   {
+  color:#fff;
 }
 
 /* Footer Styles */
@@ -285,7 +289,7 @@ li.nav-item {
   background-color:  #151515!important;
   width: 100%;
   border:none;
-  font-size: .75rem;
+  font-size: .875rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -297,7 +301,7 @@ li.nav-item {
   color: #9575cd!important;
   width: 100%;
   border:none;
-  font-size: .75rem;
+  font-size: .875rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -309,7 +313,7 @@ a.nav-link:hover {
 }
 #myTabContent {
   margin-top: 0px!important;
-  padding: 1em;
+  padding:  30px;
   background-color:  #000000!important;
   border:none;
   border-radius: 10px;
@@ -323,13 +327,16 @@ a.nav-link:hover {
 .tm-card {
   display: flex;
   flex-direction: column;
-margin-bottom: auto;
 align-items: center;
 justify-content: center;
-  gap: 6px;
+  gap: 20px;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #151515!important;
+  margin-bottom: 20px;
 }
+
+
 .tm-card.tm-impact-card {
   align-items: flex-start;
 }
@@ -342,16 +349,14 @@ p {color: #9b9b9b;}
   display: flex;
   flex-direction: column;
 margin-bottom: auto;
-margin-top: 20px;
   gap: 6px;
-  padding: 10px
 }
 
 .tm-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 40px;
 }
 
 
@@ -368,9 +373,10 @@ margin-top: 20px;
 }
 
 
-.tm-card-text {
+p.tm-card-text {
   color: #9b9b9b;
   font-size: .875rem;
+  margin-bottom: auto;
 }
 /* Modal Styles */
 .tm-modal-dialog, .tm-modal-body {
@@ -496,6 +502,10 @@ margin-top: 20px;
   .img-fluid {
     margin-bottom: 20px;
     width: 250px;
+  }
+
+  .tm-column {
+    gap: 20px;
   }
 }
 

@@ -92,7 +92,7 @@ ul, li {
   letter-spacing: 2px;
   font-weight: 500;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-top: auto;
   color: #6dd58c;
 }
 
@@ -134,7 +134,7 @@ ul, li {
 .tm-impact-card p {
   font-size: .875rem;
   letter-spacing: .25px;
-  margin-top: auto;
+  margin-top: none;
   margin-bottom: auto;
 }
 

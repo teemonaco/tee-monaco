@@ -27,7 +27,7 @@
                             <a class="tm-nav-link tm-icon-link" href="mailto:teemonaco@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="tm-nav-link tm-icon-link" href="tel:+9145273509"><i class="fa-solid fa-square-phone"></i></a>
+                            <a class="tm-nav-link tm-icon-link" href="tel:+19145273509"><i class="fa-solid fa-square-phone"></i></a>
                         </li>
                     </ul>
                 </div> 
@@ -36,7 +36,7 @@
     </header> 
 
     <!-- Home Section -->
-    <div id="tm-home" class="tm-section">
+    <!-- <div id="tm-home" class="tm-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
@@ -49,8 +49,24 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </div> -->
+  
+    <section class="hero">
+        <div class="video-background">
+            <video id="background-video" autoplay muted loop playsinline>
+                <source src="assets/video/me.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>With <span style="color:#ffffff;">over a decade of experience in user-centric design and development across e-commerce and B2B tech</span>, I bring a unique blend of empathy and technical expertise, enriched by my background in nursing. This combination empowers me to create intuitive, impactful, and accessible digital experiences.</p>
+                    <p> <span style="color:#ffffff;">This portfolio is a personal project, entirely custom-coded by me to showcase my passion, dedication, and skills</span>. Using HTML, CSS, JavaScript, and Bootstrap, I have meticulously crafted each element to demonstrate my commitment to delivering seamless, high-quality user experiences through meticulous design and innovative technology.</p>
+            <button id="unmute-button">Enable Sound</button>
+        </div>
+    </section>
+    <script src="js/custom.js"></script>
     <!-- Journey Section -->
     <div id="about-me" class="container">
             <div class="row">
@@ -438,5 +454,7 @@
             $('#myTab a.active').trigger('click');
         });
     </script>
+
+    
 </body>
 </html>

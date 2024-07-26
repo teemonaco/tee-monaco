@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  background-color: #000000;
+  background-color: #131314;
   color: #e0e0e0;
 }
 
@@ -15,35 +15,27 @@ body, html {
 }
 
 .hero {
-  position: relative;
   width: 100%;
   height: 80vh; /* Adjust height as needed */
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
 }
 
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
+.video-container {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: -1;
+  flex: 1;
 }
 
-.video-background video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+video {
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   z-index: -1;
-  transform: translate(-50%, -50%);
 }
 
 .video-background .overlay {
@@ -80,13 +72,6 @@ button {
 }
 
 
-
-
-/* Navbar Styles */
-.tm-navbar {
-  background-color: #000;
-}
-
 .tm-navbar-row {
 display: flex;
 flex-direction: row;
@@ -94,15 +79,19 @@ width: 100%;
 justify-content: space-between;
 align-items: center;
 padding: 10px 0px;
+background-color: #131314;
+
 }
 
-
+.tm-navbar {
+  background-color: #131314;
+}
 
 
 #tm-home {
-  background-color: #131314;
+  background-color: #000;
 }
-#tm-home, #tm-work.tm-section {
+#tm-project-1 {
   background-color: #1c1c1c;
 }
 
@@ -112,7 +101,8 @@ h1 {
   font-weight: 600;
   font-style: normal;
   font-size: 2.75rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px!important;
+  color: #fff;
 }
 
 h2 {
@@ -121,6 +111,7 @@ h2 {
   font-style: normal;
   font-size: 1.75rem;
   margin-bottom: 10px; 
+  color: #fff;
 }
 
 ul, li {
@@ -169,7 +160,6 @@ ul, li {
   letter-spacing: 2px;
   font-weight: 500;
   gap: 10px;
-  margin-top: auto;
   color: #6dd58c;
 }
 
@@ -178,9 +168,11 @@ ul, li {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  font-size: .875rem;
+  font-size: .75rem;
   letter-spacing: 2px;
   font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .tm-navbar .tm-nav-link,
@@ -188,11 +180,19 @@ ul, li {
   color: #ffffff;  
   font-size: 1.3rem;
 }
-
-#journey.tm-section, #about-me {
-  background-color: #000000;
+#about-me {
+  background-color: #131314;
 }
 
+.intro {
+  font-size: .85rem;
+  line-height: 150%;
+}
+
+#tm-home .container {
+  justify-content: center;
+  align-items: center;
+}
 .tm-impact-card {
   background-color: #131314;
   display: flex;
@@ -202,18 +202,18 @@ ul, li {
   padding: 20px;
   border-radius: 10px;
   box-sizing: border-box;
-  height: 100%;
+
   color: #cbcbcb;
   text-align: left;
   margin-bottom: 20px;
 }
 
-.tm-impact-card p {
+.tm-impact-card p, .card-body {
   font-size: .875rem;
   letter-spacing: .25px;
   margin-top: 0px;
-  margin-bottom: auto;
   color: #dddddd;
+  width: 100%;
 }
 
 
@@ -231,8 +231,15 @@ ul, li {
   position: absolute;
   left: 29px;
   width: 2px;
-  height: 100%;
+
   z-index: 400;
+}
+
+#what.differences {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .tm-timeline > li {
@@ -292,7 +299,7 @@ ul, li {
   color: #fff;
 }
 
-.tm-timeline li.present ul li   {
+.tm-timeline li.present ul li, #tm-project-1 ul   {
   color:#fff;
 }
 
@@ -310,7 +317,7 @@ ul, li {
 }
 
 /* Section Styles */
-.tm-section {
+section {
   padding: 60px 0;
 }
 
@@ -412,6 +419,7 @@ justify-content: center;
   box-sizing: border-box;
   background-color: #151515!important;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 

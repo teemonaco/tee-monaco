@@ -400,6 +400,10 @@ li.nav-item {
   box-sizing: border-box;
 }
 
+.carousel-control-next, .carousel-control-prev {
+  width: 3%!important;
+}
+
 .nav-tabs a.nav-link {
   color: #9b9b9b;
   align-items: center;

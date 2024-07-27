@@ -1,35 +1,23 @@
-document.getElementById('unmute-button').addEventListener('click', function() {
-    var video = document.getElementById('background-video');
-    video.muted = false;
-    video.play().then(() => {
-        document.getElementById('unmute-button').style.display = 'none';
-        document.getElementById('mute-button').style.display = 'inline';
-    }).catch(error => {
-        console.error('Error trying to play the video:', error);
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("hero-video");
+    const volumeIcon = document.getElementById("volume-icon");
+  
+    volumeIcon.addEventListener("click", function () {
+      if (video.muted) {
+        video.muted = false;
+        volumeIcon.classList.remove("fa-volume-mute");
+        volumeIcon.classList.add("fa-volume-up");
+      } else {
+        video.muted = true;
+        volumeIcon.classList.remove("fa-volume-up");
+        volumeIcon.classList.add("fa-volume-mute");
+      }
     });
-});
-
-document.getElementById('unmute-button').addEventListener('touchend', function() {
-    var video = document.getElementById('background-video');
-    video.muted = false;
-    video.play().then(() => {
-        document.getElementById('unmute-button').style.display = 'none';
-        document.getElementById('mute-button').style.display = 'inline';
-    }).catch(error => {
-        console.error('Error trying to play the video:', error);
+  
+    // Ensure video auto-plays on some browsers
+    video.play().catch(error => {
+      console.log('Autoplay prevented:', error);
+      // Auto-play was prevented, show play button or notify user
     });
-});
-
-document.getElementById('mute-button').addEventListener('click', function() {
-    var video = document.getElementById('background-video');
-    video.muted = true;
-    document.getElementById('mute-button').style.display = 'none';
-    document.getElementById('unmute-button').style.display = 'inline';
-});
-
-document.getElementById('mute-button').addEventListener('touchend', function() {
-    var video = document.getElementById('background-video');
-    video.muted = true;
-    document.getElementById('mute-button').style.display = 'none';
-    document.getElementById('unmute-button').style.display = 'inline';
-});
+  });
+  

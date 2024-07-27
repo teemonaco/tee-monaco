@@ -1,11 +1,9 @@
 /* General Styles */
 body {
-  background-color: #131314;
+  background-color: #000!important;
   color: #e0e0e0;
 }
 
-/* styles.css */
-/* styles.css */
 body, html {
   margin: 0;
   padding: 0;
@@ -15,32 +13,39 @@ body, html {
 }
 
 .hero {
+  position: relative;
   width: 100%;
-  height: 80vh; /* Adjust height as needed */
-  overflow: hidden;
+  height: calc(100vh - 200px); /* Adjust height to account for cropping */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  overflow: hidden;
+  text-align: center;
 }
 
 .video-container {
+  position: absolute;
+  top: -200px; /* Shift video up */
+  left: 0;
   width: 100%;
-  height: 100%;
-  flex: 1;
-}
-
-video {
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height: auto;
+  height: calc(100vh + 100px); /* Extend height to cover the shifted area */
+  overflow: hidden;
   z-index: -1;
 }
 
-.video-background .overlay {
+video {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  width: 100vw; /* Full viewport width */
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 200px; /* Adjust overlay position */
   left: 0;
   width: 100%;
   height: 100%;
@@ -48,22 +53,35 @@ video {
   z-index: 0;
 }
 
+.volume-control {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.7); /* Ghosted effect */
+  cursor: pointer;
+}
+
+.volume-control:hover {
+  color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+}
+
 .hero-content {
   position: relative;
   z-index: 1;
   color: white;
-  text-align: center;
-  margin: auto;
-  padding: 40px;
-  padding-top: 30px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-}
-
-button {
-  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: #fff;
 }
 
 .main-content {
@@ -71,6 +89,22 @@ button {
   background-color: #fff;
 }
 
+.intro {
+  padding: 0px 80px;
+}
+
+button {
+  cursor: pointer;
+}
+
+section#hero {
+padding: 0px!important;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #fff;
+}
 
 .tm-navbar-row {
 display: flex;

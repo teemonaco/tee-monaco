@@ -5,16 +5,12 @@
     <meta charset="utf-8">
     <title>Teena Monaco</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@100;400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/tee-custom.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 </head>
 
 <body>
@@ -31,12 +27,10 @@
                 <div class="" id="navbarNav">
                     <ul class="tm-navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="tm-nav-link tm-icon-link" href="mailto:teemonaco@gmail.com"><i
-                                    class="fa-solid fa-square-envelope"></i></a>
+                            <a class="tm-nav-link tm-icon-link" href="mailto:teemonaco@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="tm-nav-link tm-icon-link" href="tel:+19145273509"><i
-                                    class="fa-solid fa-square-phone"></i></a>
+                            <a class="tm-nav-link tm-icon-link" href="tel:+19145273509"><i class="fa-solid fa-square-phone"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -45,22 +39,7 @@
     </header>
 
     <!-- Home Section -->
-    <!-- <div id="tm-home" class="tm-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <img class="img-fluid" src="assets/images/tm-hero-circle.png" width="360" alt="Teena Monaco">
-                </div>
-                <div class="col-md-6">
-                    <h1 style="color:#c58af9;">Welcome to My Portfolio</h1>
-                    <p>With <span style="color:#ffffff;">over a decade of experience in user-centric design and development across e-commerce and B2B tech</span>, I bring a unique blend of empathy and technical expertise, enriched by my background in nursing. This combination empowers me to create intuitive, impactful, and accessible digital experiences.</p>
-                    <p> <span style="color:#ffffff;">This portfolio is a personal project, entirely custom-coded by me to showcase my passion, dedication, and skills</span>. Using HTML, CSS, JavaScript, and Bootstrap, I have meticulously crafted each element to demonstrate my commitment to delivering seamless, high-quality user experiences through meticulous design and innovative technology.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <section id="tm-home" class="tm-section">
+    <!-- <section id="tm-home" class="tm-section">
         <div class="container">
             <div class="row">
                 <div class="intro col-md-6 text-md-start">
@@ -82,7 +61,32 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="hero" class="hero">
+        <div class="video-container">
+            <video id="hero-video" autoplay muted loop playsinline>
+                <source src="assets/video/me-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="volume-control">
+            <i id="volume-icon" class="fa fa-volume-up"></i>
+        </div>
+        <div class="hero-content container">
+            <div class="intro">
+                <h1>Welcome to My Portfolio</h1>
+                <p>With over a decade of experience in user-centric design and development across e-commerce and B2B tech, I bring a unique blend of empathy and technical expertise, enriched by my background in nursing. This combination empowers me to create intuitive, impactful, and accessible digital experiences.</p>
+                <p>This portfolio is a personal project, entirely custom-coded by me to showcase my passion, dedication, and skills. Using HTML, CSS, JavaScript, and Bootstrap, I have meticulously crafted each element to demonstrate my commitment to delivering seamless, high-quality user experiences through meticulous design and innovative technology.</p>
+            </div>
+        </div>
     </section>
+    
+    
+    
+
+
     <!-- Journey Section -->
     <section id="about-me" class="tm-section">
         <div class="container">
@@ -106,19 +110,17 @@
                             <div class="tm-year"></i>2013-2015</div>
                             <ul>
                                 <li>Designed and developed engaging web experiences for America's leading awards
-                                    manufacturer, enhancing online presence and user experience. </li>
+                                    manufacturer, enhancing online presence and user experience.</li>
                                 <li>Collaborated with product teams to integrate e-commerce functionalities and optimize
-                                    product displays.
-
-                                </li>
+                                    product displays.</li>
                             </ul>
                         <li>
                             <div class="tm-year"></i>2015-2023</div>
                             <ul>
                                 <li>Led the design and development of complex enterprise solutions for Global 2000
-                                    companies in life sciences, government, and finance. </li>
+                                    companies in life sciences, government, and finance.</li>
                                 <li>Conducted extensive user research, creating wireframes and interactive prototypes to
-                                    ensure user-centric designs. </li>
+                                    ensure user-centric designs.</li>
                                 <li>Implemented sophisticated data visualization components, making complex data
                                     accessible and actionable for top industry stakeholders.</li>
                             </ul>
@@ -180,7 +182,7 @@
             </div>
     </section>
 
-<!-------------------------------------------->
+    <!-------------------------------------------->
     <section id="tm-project-1" class="tm-section">
         <div class="container">
             <div class="tm-card">
@@ -205,74 +207,44 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="tm-card">
-                                    <img src="assets/images/infopro/discover.png" class="tm-card-img-top" width="220px"
-                                        alt="Discover">
+                                    <img src="assets/images/infopro/discover.png" class="tm-card-img-top" width="100%" alt="Discover">
                                     <div class="tm-card-body">
                                         <div class="gallery-title">Discover</div>
-                                        <p class="tm-card-text">The discover section features curated content, including
-                                            trending research articles and newsletters. Users can explore detailed
-                                            insights on topics like hepatocyte growth factors and save or share
-                                            articles. This section is designed to enhance content discovery and
-                                            engagement.</p>
+                                        <p class="tm-card-text">The discover section features curated content, including trending research articles and newsletters. Users can explore detailed insights on topics like hepatocyte growth factors and save or share articles. This section is designed to enhance content discovery and engagement.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="tm-card">
-                                    <img src="assets/images/infopro/date-filter.png" class="tm-card-img-top"
-                                        width="220px" alt="Discover">
+                                    <img src="assets/images/infopro/date-filter.png" class="tm-card-img-top" width="100%" alt="Discover">
                                     <div class="tm-card-body">
                                         <div class="gallery-title">Discover</div>
-                                        <p class="tm-card-text">Once inside the Discover section, users can like,
-                                            comment, and bookmark articles, ensuring easy access to preferred content.
-                                            The feed is consistently updated to include the latest developments in areas
-                                            such as pharmaceutical innovations and cardiology advances.</p>
+                                        <p class="tm-card-text">Once inside the Discover section, users can like, comment, and bookmark articles, ensuring easy access to preferred content. The feed is consistently updated to include the latest developments in areas such as pharmaceutical innovations and cardiology advances.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="tm-card">
-                                    <img src="assets/images/infopro/my-stream.png" class="tm-card-img-top" width="220px"
-                                        alt="Discover">
+                                    <img src="assets/images/infopro/search.png" class="tm-card-img-top" width="100%" alt="Discover">
                                     <div class="tm-card-body">
-                                        <div class="gallery-title">My Stream</div>
-                                        <p class="tm-card-text">The My Stream section showcases relevant content based
-                                            on user activity, searche history, shared content and user interactions.
-                                            Users can read detailed articles, interact through likes and comments, and
-                                            stay updated with the latest advancements.</p>
+                                        <div class="gallery-title">Search</div>
+                                        <p class="tm-card-text">The advanced search interface allows users to perform detailed searches using multiple filters and logical operators. This functionality ensures that users can find precise information quickly, tailored to their specific needs in various research areas.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-md-4">
+                            
+                            <div class="col-md-6">
                                 <div class="tm-card">
-                                    <img src="assets/images/infopro/search.png" class="tm-card-img-top" width="220px"
-                                        alt="Discover">
-                                    <div class="tm-card-body">
-                                        <div class="gallery-title">Search</div>
-                                        <p class="tm-card-text">The advanced search interface allows users to perform
-                                            detailed searches using multiple filters and logical operators. This
-                                            functionality ensures that users can find precise information quickly,
-                                            tailored to their specific needs in various research areas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tm-card">
-                                    <img src="assets/images/infopro/search-filter.png" class="tm-card-img-top"
-                                        width="220px" alt="Discover">
+                                    <img src="assets/images/infopro/search-filter.png" class="tm-card-img-top" width="100%" alt="Discover">
                                     <div class="tm-card-body">
                                         <div class="gallery-title">Search Filter</div>
-                                        <p class="tm-card-text">The search filter feature provides a comprehensive set
-                                            of options to refine search results by content category, such as clinical
-                                            trials, conferences, journals, news, patents, regulatory info, and social
-                                            media. This enables users to target their searches effectively.</p>
+                                        <p class="tm-card-text">The search filter feature provides a comprehensive set of options to refine search results by content category, such as clinical trials, conferences, journals, news, patents, regulatory info, and social media. This enables users to target their searches effectively.</p>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +261,6 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -302,408 +273,212 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
         </div>
     </section>
-<!-------------------------------------------->
-    <section id="tm-project-1" class="tm-section">
-            <div class="container">
 
-                <div class="tm-card">
-                    <div style="width:100%;">
-                        <h2>Case Study: InforPro Mobile App</h2>
-                        <p class="card-text">
-                            <strong>Objective:</strong> Enhance content discovery, user engagement, and content sharing in
-                            the healthcare and pharmaceutical research industry.
-                        </p>
-                        <p class="card-text">
-                            <strong>Key Features:</strong>
-                        <ul>
-                            <li>Discover: Curated research articles and newsletters.</li>
-                            <li>My Stream: Personalized content feed based on user activity.</li>
-                            <li>Search: Advanced search with detailed filters.</li>
-                            <li>Account Settings: Customized news and updates.</li>
-                        </ul>
-                        </p>
-                    </div>
+    <!-------------------------------------------->
+    <section id="tm-project-2" class="tm-section">
+        <div class="container">
+            <div class="tm-card">
+                <div style="width:100%;">
+                    <h2>Case Study: InforPro Mobile App</h2>
+                    <p class="card-text">
+                        <strong>Objective:</strong> Enhance content discovery, user engagement, and content sharing in
+                        the healthcare and pharmaceutical research industry.
+                    </p>
+                    <p class="card-text">
+                        <strong>Key Features:</strong>
+                    <ul>
+                        <li>Discover: Curated research articles and newsletters.</li>
+                        <li>My Stream: Personalized content feed based on user activity.</li>
+                        <li>Search: Advanced search with detailed filters.</li>
+                        <li>Account Settings: Customized news and updates.</li>
+                    </ul>
+                    </p>
                 </div>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-1.png" class="tm-card-img-top" width="100%"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title">Welcome to the SB Style Guide</div>
-                                            <p class="tm-card-text">This introductory screen of the SB Style Guide
-                                                provides an overview of the code-ready component-based library developed
-                                                using Atomic Design
-                                                principles. It explains the atomic design methodology encompassing
-                                                elements like
-                                                ions, atoms, molecules, organisms, and complex organisms. Each class
-                                                begins with
-                                                the prefix "sb-" and uses the clamp/calc method for responsive padding,
-                                                gaps,
-                                                and font sizes.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-2.png" class="tm-card-img-top" width="100%"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title">Utility Classes</div>
-                                            <p class="tm-card-text">The Utility Classes screen encourages developers to
-                                                use flex
-                                                and percent-based layouts over hard-coded pixel widths and heights. It
-                                                showcases
-                                                classes like sb-row and sb-col which can be nested and auto-resize
-                                                padding and
-                                                gaps. This section also provides examples of how these classes can be
-                                                combined
-                                                to create the perfect component, complete with HTML and CSS code
-                                                snippets for
-                                                easy copy and paste.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-3.png" class="tm-card-img-top" width="100%"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title"> Text & Color Classes</div>
-                                            <p class="tm-card-text">This screen details various text and color utility
-                                                classes
-                                                that ensure all color combinations pass WCAG AA standards. It includes
-                                                examples
-                                                of resizable and fixed text sizes, text alignment, and non-wrapping text
-                                                classes. Each class is accompanied by HTML and CSS code snippets, making
-                                                it easy
-                                                for developers to implement these styles consistently.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-4.png" class="tm-card-img-top" width="100%"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title">Themes</div>
-                                            <p class="tm-card-text">This screen showcases different themes that can be
-                                                applied
-                                                to components, including sb-th-gray, sb-th-white, etc. Each theme is
-                                                designed to
-                                                serve a specific purpose, such as providing a neutral backdrop or
-                                                highlighting
-                                                important elements. This screen provides visual examples and
-                                                corresponding code
-                                                snippets for each theme.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-5.png" class="tm-card-img-top" width="100%"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title">Buttons</div>
-                                            <p class="tm-card-text">The Buttons screen demonstrates the design and
-                                                responsive
-                                                scaling of various button styles using the clamp function. It covers button
-                                                groups, different button sizes, and themed buttons like sb-btn-group,
-                                                sb-btn-xl,
-                                                and sb-btn-th-gray. Each example includes HTML and CSS code snippets for
-                                                easy
-                                                implementation.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-6.png" width="100%" class="tm-card-img-top"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title">Alerts</div>
-                                            <p class="tm-card-text">The Alerts screen provides different variations of alert
-                                                components, such as success, error, warning, and informational alerts. Each
-                                                alert type is designed to convey specific messages with distinct visual
-                                                styles.
-                                                The screen includes examples of nested and main component alerts, along with
-                                                HTML and CSS code snippets.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-7.png" width="100%" class="tm-card-img-top"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title">Form Elements</div>
-                                            <p class="tm-card-text">The Form Elements screen details the input and select
-                                                elements wrapped in sb-input-wrap classes for seamless icon integration. It
-                                                includes examples of text fields, select dropdowns, email and phone inputs,
-                                                and
-                                                more. Each form element is designed for accessibility and consistency, with
-                                                HTML
-                                                and CSS code snippets provided for easy copy and paste.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="tm-card">
-                                        <img src="assets/images/design-sys-7.png" width="100%" class="tm-card-img-top"
-                                            alt="Discover">
-                                        <div class="tm-card-body">
-                                            <div class="gallery-title">Creative Kindness</div>
-                                            <p class="tm-card-text">The Creative Kindness screen presents a unique theme for
-                                                the
-                                                style guide, featuring custom color themes like ck-th-sand and ck-th-blue.
-                                                It
-                                                also showcases various assets, section layouts, and Font Awesome icons
-                                                tailored
-                                                to the theme. The screen provides a comprehensive view of how to implement
-                                                this
-                                                theme across different components, complete with HTML and CSS code snippets.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
             </div>
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/design-sys-1.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Welcome to the SB Style Guide</div>
+                                        <p class="tm-card-text">This introductory screen of the SB Style Guide provides an overview of the code-ready component-based library developed using Atomic Design principles. It explains the atomic design methodology encompassing elements like ions, atoms, molecules, organisms, and complex organisms. Each class begins with the prefix "sb-" and uses the clamp/calc method for responsive padding, gaps, and font sizes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/design-sys-2.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Utility Classes</div>
+                                        <p class="tm-card-text">The Utility Classes screen encourages developers to use flex and percent-based layouts over hard-coded pixel widths and heights. It showcases classes like sb-row and sb-col which can be nested and auto-resize padding and gaps. This section also provides examples of how these classes can be combined to create the perfect component, complete with HTML and CSS code snippets for easy copy and paste.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/design-sys-3.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Text & Color Classes</div>
+                                        <p class="tm-card-text">This screen details various text and color utility classes that ensure all color combinations pass WCAG AA standards. It includes examples of resizable and fixed text sizes, text alignment, and non-wrapping text classes. Each class is accompanied by HTML and CSS code snippets, making it easy for developers to implement these styles consistently.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/design-sys-4.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Themes</div>
+                                        <p class="tm-card-text">This screen showcases different themes that can be applied to components, including sb-th-gray, sb-th-white, etc. Each theme is designed to serve a specific purpose, such as providing a neutral backdrop or highlighting important elements. This screen provides visual examples and corresponding code snippets for each theme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div>
     </section>
-<!-------------------------------------------->
-<section id="tm-project-1" class="tm-section">
-    <div class="container">
 
-        <div class="tm-card">
-            <div style="width:100%;">
-                <h2>Case Study: InforPro Mobile App</h2>
-                <p class="card-text">
-                    <strong>Objective:</strong> Enhance content discovery, user engagement, and content sharing in
-                    the healthcare and pharmaceutical research industry.
-                </p>
-                <p class="card-text">
-                    <strong>Key Features:</strong>
-                <ul>
-                    <li>Discover: Curated research articles and newsletters.</li>
-                    <li>My Stream: Personalized content feed based on user activity.</li>
-                    <li>Search: Advanced search with detailed filters.</li>
-                    <li>Account Settings: Customized news and updates.</li>
-                </ul>
-                </p>
-            </div>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-cart.png" class="tm-card-img-top" width="100%"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title">Welcome to the SB Style Guide</div>
-                                    <p class="tm-card-text">This introductory screen of the SB Style Guide
-                                        provides an overview of the code-ready component-based library developed
-                                        using Atomic Design
-                                        principles. It explains the atomic design methodology encompassing
-                                        elements like
-                                        ions, atoms, molecules, organisms, and complex organisms. Each class
-                                        begins with
-                                        the prefix "sb-" and uses the clamp/calc method for responsive padding,
-                                        gaps,
-                                        and font sizes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-ship.png" class="tm-card-img-top" width="100%"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title">Utility Classes</div>
-                                    <p class="tm-card-text">The Utility Classes screen encourages developers to
-                                        use flex
-                                        and percent-based layouts over hard-coded pixel widths and heights. It
-                                        showcases
-                                        classes like sb-row and sb-col which can be nested and auto-resize
-                                        padding and
-                                        gaps. This section also provides examples of how these classes can be
-                                        combined
-                                        to create the perfect component, complete with HTML and CSS code
-                                        snippets for
-                                        easy copy and paste.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-ship-1.png" class="tm-card-img-top" width="100%"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title"> Text & Color Classes</div>
-                                    <p class="tm-card-text">This screen details various text and color utility
-                                        classes
-                                        that ensure all color combinations pass WCAG AA standards. It includes
-                                        examples
-                                        of resizable and fixed text sizes, text alignment, and non-wrapping text
-                                        classes. Each class is accompanied by HTML and CSS code snippets, making
-                                        it easy
-                                        for developers to implement these styles consistently.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-pay.png" class="tm-card-img-top" width="100%"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title">Themes</div>
-                                    <p class="tm-card-text">This screen showcases different themes that can be
-                                        applied
-                                        to components, including sb-th-gray, sb-th-white, etc. Each theme is
-                                        designed to
-                                        serve a specific purpose, such as providing a neutral backdrop or
-                                        highlighting
-                                        important elements. This screen provides visual examples and
-                                        corresponding code
-                                        snippets for each theme.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+    <!-------------------------------------------->
+    <section id="tm-project-3" class="tm-section">
+        <div class="container">
+            <div class="tm-card">
+                <div style="width:100%;">
+                    <h2>Case Study: InforPro Mobile App</h2>
+                    <p class="card-text">
+                        <strong>Objective:</strong> Enhance content discovery, user engagement, and content sharing in
+                        the healthcare and pharmaceutical research industry.
+                    </p>
+                    <p class="card-text">
+                        <strong>Key Features:</strong>
+                    <ul>
+                        <li>Discover: Curated research articles and newsletters.</li>
+                        <li>My Stream: Personalized content feed based on user activity.</li>
+                        <li>Search: Advanced search with detailed filters.</li>
+                        <li>Account Settings: Customized news and updates.</li>
+                    </ul>
+                    </p>
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-m-cart.png" class="tm-card-img-top" width="100%"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title">Buttons</div>
-                                    <p class="tm-card-text">The Buttons screen demonstrates the design and
-                                        responsive
-                                        scaling of various button styles using the clamp function. It covers button
-                                        groups, different button sizes, and themed buttons like sb-btn-group,
-                                        sb-btn-xl,
-                                        and sb-btn-th-gray. Each example includes HTML and CSS code snippets for
-                                        easy
-                                        implementation.</p>
+            </div>
+            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/ba-cart.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Welcome to the SB Style Guide</div>
+                                        <p class="tm-card-text">This introductory screen of the SB Style Guide provides an overview of the code-ready component-based library developed using Atomic Design principles. It explains the atomic design methodology encompassing elements like ions, atoms, molecules, organisms, and complex organisms. Each class begins with the prefix "sb-" and uses the clamp/calc method for responsive padding, gaps, and font sizes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/ba-ship.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Utility Classes</div>
+                                        <p class="tm-card-text">The Utility Classes screen encourages developers to use flex and percent-based layouts over hard-coded pixel widths and heights. It showcases classes like sb-row and sb-col which can be nested and auto-resize padding and gaps. This section also provides examples of how these classes can be combined to create the perfect component, complete with HTML and CSS code snippets for easy copy and paste.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-m-ship.png" width="100%" class="tm-card-img-top"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title">Alerts</div>
-                                    <p class="tm-card-text">The Alerts screen provides different variations of alert
-                                        components, such as success, error, warning, and informational alerts. Each
-                                        alert type is designed to convey specific messages with distinct visual
-                                        styles.
-                                        The screen includes examples of nested and main component alerts, along with
-                                        HTML and CSS code snippets.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/ba-ship-1.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Text & Color Classes</div>
+                                        <p class="tm-card-text">This screen details various text and color utility classes that ensure all color combinations pass WCAG AA standards. It includes examples of resizable and fixed text sizes, text alignment, and non-wrapping text classes. Each class is accompanied by HTML and CSS code snippets, making it easy for developers to implement these styles consistently.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-m-ship-error.png" width="100%" class="tm-card-img-top"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title">Form Elements</div>
-                                    <p class="tm-card-text">The Form Elements screen details the input and select
-                                        elements wrapped in sb-input-wrap classes for seamless icon integration. It
-                                        includes examples of text fields, select dropdowns, email and phone inputs,
-                                        and
-                                        more. Each form element is designed for accessibility and consistency, with
-                                        HTML
-                                        and CSS code snippets provided for easy copy and paste.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="tm-card">
-                                <img src="assets/images/ba-m-ship-pay.png" width="100%" class="tm-card-img-top"
-                                    alt="Discover">
-                                <div class="tm-card-body">
-                                    <div class="gallery-title">Creative Kindness</div>
-                                    <p class="tm-card-text">The Creative Kindness screen presents a unique theme for
-                                        the
-                                        style guide, featuring custom color themes like ck-th-sand and ck-th-blue.
-                                        It
-                                        also showcases various assets, section layouts, and Font Awesome icons
-                                        tailored
-                                        to the theme. The screen provides a comprehensive view of how to implement
-                                        this
-                                        theme across different components, complete with HTML and CSS code snippets.
-                                    </p>
+                            <div class="col-md-6">
+                                <div class="tm-card">
+                                    <img src="assets/images/ba-pay.png" class="tm-card-img-top" width="100%" alt="Discover">
+                                    <div class="tm-card-body">
+                                        <div class="gallery-title">Themes</div>
+                                        <p class="tm-card-text">This screen showcases different themes that can be applied to components, including sb-th-gray, sb-th-white, etc. Each theme is designed to serve a specific purpose, such as providing a neutral backdrop or highlighting important elements. This screen provides visual examples and corresponding code snippets for each theme.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div>
+    </section>
+
+    <!-------------------------------------------->
+    <footer class="text-center py-4">
+        <div class="container">
+            <div id="contact">
+                <p style="margin: 40px 0px 20px 0px;font-size: .75rem;">&copy; 2024 Teena Monaco. All Rights Reserved.</p>
             </div>
         </div>
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </div>
-</section>
-<!-------------------------------->
-
-
-<footer class="text-center py-4">
-    <div class="container">
-        <div id="contact">
-            <!-- <div class="container">
-        <h2 class="text-center">Contact Me</h2>
-            <div style="margin: 20px 0px 10px 0px;" class="text-center">
-                <a class="contact" href="mailto:teemonaco@gmail.com"><i class="fa fa-envelope"></i> teemonaco@gmail.com</a>
-            </div>
-            <div style=" margin: 10px 0px;" class="text-center">
-                <a class="contact" href="tel:+9145273509"><i class="fa fa-mobile-screen"></i> (914) 527-3509</a>
-            </div>
-    </div> -->
-            <p style="margin: 40px 0px 20px 0px;font-size: .75rem;">&copy; 2024 Teena Monaco. All Rights
-                Reserved.
-            </p>
-        </div>
-
-    </div>
-</footer>
+    </footer>
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("hero-video");
+  const volumeIcon = document.getElementById("volume-icon");
+
+  volumeIcon.addEventListener("click", function () {
+    if (video.muted) {
+      video.muted = false;
+      volumeIcon.classList.remove("fa-volume-mute");
+      volumeIcon.classList.add("fa-volume-up");
+    } else {
+      video.muted = true;
+      volumeIcon.classList.remove("fa-volume-up");
+      volumeIcon.classList.add("fa-volume-mute");
+    }
+  });
+
+  // Ensure video auto-plays on some browsers
+  video.play().catch(error => {
+    console.log('Autoplay prevented:', error);
+    // Auto-play was prevented, show play button or notify user
+  });
+});
+
+</script>
 
 </html>

@@ -117,7 +117,9 @@ background-color: #131314;
 .tm-navbar {
   background-color: #131314;
 }
-
+.tm-navbar-nav.ms-auto {
+  margin-bottom: 0px;
+}
 
 #tm-home {
   background-color: #000;

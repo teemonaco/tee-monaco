@@ -683,7 +683,6 @@ video {
   }
 
   .overlay {
-    top: 0; /* Align overlay with the top of the video */
     height: 100%; /* Ensure overlay covers the entire hero section */
   }
 

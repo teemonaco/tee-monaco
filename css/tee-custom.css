@@ -122,8 +122,13 @@ background-color: #131314;
 
 #tm-home {
   background-color: #000;
+  padding: 20px!important;
 }
-#tm-project-1, #tm-project-3 {
+
+#tm-project-3, #tm-project-5 {
+  background-color: #000;
+}
+#tm-project-1, #tm-project-4, #tm-project-6 {
   background-color: #131314;
 }
 

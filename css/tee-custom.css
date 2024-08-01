@@ -113,6 +113,10 @@ background-color: #131314;
 
 }
 
+.carousel-control-next, .carousel-control-prev {
+  z-index: 100!important;
+}
+
 .tm-navbar {
   background-color: #131314;
 }
